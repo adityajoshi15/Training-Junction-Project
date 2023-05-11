@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 3 - Linux</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Alata&family=Bangers&family=Bebas+Neue&family=Concert+One&family=Fira+Sans+Extra+Condensed&family=Kalam:wght@700&family=Oswald:wght@600&family=Sofia+Sans+Extra+Condensed&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            color: white;
+            background-color: rgb(29, 29, 29);
+            /* border: 2px solid white; */
+            /* font-family: 'Acme', sans-serif; */
+            /* font-family: 'Alata', sans-serif; */
+            /* font-family: 'Bangers', cursive; */
+            /* font-family: 'Bebas Neue', cursive; */
+            /* font-family: 'Concert One', cursive; */
+            /* font-family: 'Fira Sans Extra Condensed', sans-serif; */
+            /* font-family: 'Kalam', cursive; */
+            font-family: 'Oswald', sans-serif;
+            /* font-family: 'Sofia Sans Extra Condensed', sans-serif; */
+        }
+
+        body img {
+            height: 250px;
+            display: block;
+            margin: auto;
+            border: 2px solid white;
+        }
+
+        #primary {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .container {
+            /* border: 2px solid red; */
+            height: 100%;
+            width: 100%;
+            margin: 8px;
+        }
+
+        .container p {
+            font-size: 20px;
+            /* border: 2px solid white; */
+            /* font-family: 'Acme', sans-serif; */
+            /* font-family: 'Alata', sans-serif; */
+            /* font-family: 'Bangers', cursive; */
+            /* font-family: 'Bebas Neue', cursive; */
+            /* font-family: 'Concert One', cursive; */
+            /* font-family: 'Fira Sans Extra Condensed', sans-serif; */
+            font-family: 'Kalam', cursive;
+            /* font-family: 'Oswald', sans-serif; */
+            /* font-family: 'Sofia Sans Extra Condensed', sans-serif; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="primary">Module 3 - Linux</h1>
+    <img src="images/IMG15.jpg" alt="Linux Photo">
+    <div class="container">
+        <p>Open source is a term that originally referred to open source software (OSS). Open source software is code
+            that is designed to be publicly accessible—anyone can see, modify, and distribute the code as they see fit.
+
+            Open source software is developed in a decentralized and collaborative way, relying on peer review and
+            community production. Open source software is often cheaper, more flexible, and has more longevity than its
+            proprietary peers because it is developed by communities rather than a single author or company.
+
+            Open source has become a movement and a way of working that reaches beyond software production. The open
+            source movement uses the values and decentralized production model of open source software to find new ways
+            to solve problems in their communities and industries.</p>
+        <p>In popular usage, “Linux” often refers to a group of operating system distributions built around the Linux
+            kernel. In the strictest sense, though, Linux refers only to the presence of the kernel itself. To build out
+            a full operating system, Linux distributions often include tooling and libraries from the GNU project and
+            other sources. More developers have been using Linux recently to build and run mobile applications; it has
+            also played a key role in the development of affordable devices such as Chromebooks, which run operating
+            systems on the kernel. Within cloud computing and server environments in general, Linux is a popular choice
+            for some practical reasons:
+
+            Its distributions remain current and supported by communities of other developers.
+            It can run on a wide range of hardware and will install alongside pre-existing systems (a helpful trait in
+            local development environments).
+            It supports centralized software installation from pre-existing repositories.
+            Its resource requirements are low.
+            It is often top of mind when developers are building application ecosystems and tooling for servers, leading
+            to high levels of compatibility.
+            It sustains necessary modifications to operating system behaviors.</p>
+        <p>Linux also traces its origins to the free and open-source software movement, and as a consequence some
+            developers choose it for a combination of ethical and practical reasons:
+
+            For some developers, using Linux represents a commitment to accessibility and freedom of expression.
+            The Linux community is also a draw for some developers: when they have questions, they can consult the
+            resources produced by this community or reach out directly to one of many active maintainers.</p>
+        <p>Key Features of Linux -
+            Though the Linux kernel inherited many goals and properties from Unix, it differs from the earlier system in
+            the following ways:
+
+            Its core component is the kernel, which is developed independently from other operating system components.
+            This means that Linux borrows elements from a variety of sources (such as GNU) to comprise an entire
+            operating system.
+            It is free and open-source. Maintained by a community of developers, the kernel is licensed under the GNU
+            General Public License (an offshoot of the FSF's work on the GNU Project), and available for download and
+            modification. The GPL stipulates that derivative work must maintain the licensing terms of the original
+            software.
+            It has a monolithic kernel, similar to Unix, but it can dynamically load and unload kernel code on demand.
+            It has symmetrical multiprocessor (SMP) support, unlike traditional Unix implementations. This means that a
+            single operating system can have access to multiple processors, which share a main memory and access to all
+            I/O devices.
+            Its kernel is preemptive, another difference from Unix. This means that the scheduler can force a context
+            switch on a driver or another part of the kernel while it is executing.
+            Its kernel does not differentiate between threads and normal processes.
+            It includes a Command Line Interface (CLI) and can also include a Graphic User Interface (GUI).</p>
+        <img src="images/IMG17.jpg" alt="Linux Photo">
+        <p>The GNU Project (/gnu:/ (listen)) is a free software, mass collaboration project announced by Richard
+            Stallman on September 27, 1983. Its goal is to give computer users freedom and control in their use of their
+            computers and computing devices by collaboratively developing and publishing software that gives everyone
+            the rights to freely run the software, copy and distribute it, study it, and modify it. GNU software grants
+            these rights in its license.
+
+            In order to ensure that the entire software of a computer grants its users all freedom rights (use, share,
+            study, modify), even the most fundamental and important part, the operating system (including all its
+            numerous utility programs) needed to be free software. According to its manifesto, the founding goal of the
+            project was to build a free operating system, and if possible, "everything useful that normally comes with a
+            Unix system so that one could get along without any software that is not free." Stallman decided to call
+            this operating system GNU (a recursive acronym meaning "GNU's not Unix!"), basing its design on that of
+            Unix, a proprietary operating system.</p>
+        <img src="images/IMG18.jpg" alt="Linux Photo">
+        <p>An operating system (OS) is the low-level software that manages resources, controls peripherals, and provides
+            basic services to other software. In Linux, there are 6 distinct stages in the typical booting process.</p>
+        <p>1. BIOS:
+            BIOS stands for Basic Input/Output System. In simple terms, the BIOS loads and executes the Master Boot
+            Record (MBR) boot loader.
+
+            When you first turn on your computer, the BIOS first performs some integrity checks of the HDD or SSD.
+
+            Then, the BIOS searches for, loads, and executes the boot loader program, which can be found in the Master
+            Boot Record (MBR). The MBR is sometimes on a USB stick or CD-ROM such as with a live installation of Linux.
+
+            Once the boot loader program is detected, it's then loaded into memory and the BIOS gives control of the
+            system to it.</p>
+        <p>2. MBR:
+            MBR stands for Master Boot Record, and is responsible for loading and executing the GRUB boot loader.
+
+            The MBR is located in the 1st sector of the bootable disk, which is typically /dev/hda, or /dev/sda,
+            depending on your hardware. The MBR also contains information about GRUB, or LILO in very old systems.</p>
+        <p>3. GRUB:
+            Sometimes called GNU GRUB, which is short for GNU GRand Unified Bootloader, is the typical boot loader for
+            most modern Linux systems.
+
+            The GRUB splash screen is often the first thing you see when you boot your computer. It has a simple menu
+            where you can select some options. If you have multiple kernel images installed, you can use your keyboard
+            to select the one you want your system to boot with. By default, the latest kernel image is selected.
+
+            The splash screen will wait a few seconds for you to select and option. If you don't, it will load the
+            default kernel image.</p>
+        <p>4. Kernel:
+            The kernel is often referred to as the core of any operating system, Linux included. It has complete control
+            over everything in your system.
+
+            In this stage of the boot process, the kernel that was selected by GRUB first mounts the root file system
+            that's specified in the grub.conf file. Then it executes the /sbin/init program, which is always the first
+            program to be executed. You can confirm this with its process id (PID), which should always be 1.
+
+            The kernel then establishes a temporary root file system using Initial RAM Disk (initrd) until the real file
+            system is mounted.</p>
+        <p>5. Init:
+            At this point, your system executes runlevel programs. At one point it would look for an init file, usually
+            found at /etc/inittab to decide the Linux run level.
+
+            Modern Linux systems use systemd to choose a run level instead. According to TecMint, these are the
+            available run levels:
+
+            Run level 0 is matched by poweroff.target (and runlevel0.target is a symbolic link to poweroff.target).
+
+            Run level 1 is matched by rescue.target (and runlevel1.target is a symbolic link to rescue.target).
+
+            Run level 3 is emulated by multi-user.target (and runlevel3.target is a symbolic link to multi-user.target).
+
+            Run level 5 is emulated by graphical.target (and runlevel5.target is a symbolic link to graphical.target).
+
+            Run level 6 is emulated by reboot.target (and runlevel6.target is a symbolic link to reboot.target).
+
+            Emergency is matched by emergency.target.
+            systemd will then begin executing runlevel programs.</p>
+        <p>6. Runlevel programs:
+            Depending on which Linux distribution you have installed, you may be able to see different services getting
+            started. For example, you might catch starting sendmail …. OK.
+
+            These are known as runlevel programs, and are executed from different directories depending on your run
+            level. Each of the 6 runlevels described above has its own directory:
+
+            Run level 0 - /etc/rc0.d/ ,
+            Run level 1 - /etc/rc1.d/ ,
+            Run level 2 - /etc/rc2.d/ ,
+            Run level 3 - /etc/rc3.d/ ,
+            Run level 4 - /etc/rc4.d/ ,
+            Run level 5 - /etc/rc5.d/ ,
+            Run level 6 - /etc/rc6.d/
+            Note that the exact location of these directories varies from distribution to distribution.
+
+            If you look in the different run level directories, you'll find programs that start with either an "S" or
+            "K" for startup and kill, respectively. Startup programs are executed during system startup, and kill
+            programs during shutdown.</p>
+        <img src="images/IMG16.png" alt="Linux Photo">
+        <p>A shell is a program that provides an interface between a user and an operating system (OS) kernel. An OS
+            starts a shell for each user when the user logs in or opens a terminal or console window.
+
+            A kernel is a program that:
+
+            Controls all computer operations.
+            Coordinates all executing utilities
+            Ensures that executing utilities do not interfere with each other or consume all system resources.
+            Schedules and manages all system processes.
+            By interfacing with a kernel, a shell provides a way for a user to execute utilities and programs.</p>
+        <p>The shell also provides a user environment that you can customize using initialization files. These files
+            contain settings for user environment characteristics, such as:
+
+            Search paths for finding commands.
+            Default permissions on new files.
+            Values for variables that other programs use.
+            Values that you can customize.</p>
+        <p>The following sections describe OS shells mostly available on UNIX/Linux Operating system. Shell features and
+            their default prompts are also described.</p>
+        <p>1. The Bourne Shell -
+            The Bourne shell (sh), written by Steve Bourne at AT&T Bell Labs, is the original UNIX shell. It is the
+            preferred shell for shell programming because of its compactness and speed. A Bourne shell drawback is that
+            it lacks features for interactive use, such as the ability to recall previous commands (history). The Bourne
+            shell also lacks built-in arithmetic and logical expression handling.
+
+            The Bourne shell is the Solaris OS default shell. It is the standard shell for Solaris system administration
+            scripts. For the Bourne shell the:
+
+            Command full-path name is /bin/sh and /sbin/sh.
+            Non-root user default prompt is $.
+            Root user default prompt is #.</p>
+        <p>2. The C Shell
+            The C shell (csh):
+
+            Is a UNIX enhancement written by Bill Joy at the University of California at Berkeley.
+            Incorporated features for interactive use, such as aliases and command history.
+            Includes convenient programming features, such as built-in arithmetic and a C-like expression syntax.
+            For the C shell the:
+
+            Command full-path name is /bin/csh.
+            Non-root user default prompt is hostname %.
+            Root user default prompt is hostname #.</p>
+        <p>3. The Korn Shell
+            The Korn shell (ksh):
+
+            Was written by David Korn at AT&T Bell Labs
+            Is a superset of the Bourne shell.
+            Supports everything in the Bourne shell.
+            Has interactive features comparable to those in the C shell.
+            Includes convenient programming features like built-in arithmetic and C-like arrays, functions, and
+            string-manipulation facilities.
+            Is faster than the C shell.
+            Runs scripts written for the Bourne shell.
+            For the Korn shell the:
+
+            Command full-path name is /bin/ksh.
+            Non-root user default prompt is $.
+            Root user default prompt is #.</p>
+        <p>4. The GNU Bourne-Again Shell
+            The GNU Bourne-Again shell (bash):
+
+            Is compatible to the Bourne shell.
+            Incorporates useful features from the Korn and C shells.
+            Has arrow keys that are automatically mapped for command recall and editing.
+            For the GNU Bourne-Again shell the:
+
+            Command full-path name is /bin/bash.
+            Default prompt for a non-root user is bash-x.xx$. (Where x.xx indicates the shell version number. For
+            example, bash-3.50$)
+            Root user default prompt is bash-x.xx#. (Where x.xx indicates the shell version number. For example,
+            bash-3.50$#)</p>
+        <p>A process refers to a program in execution; it's a running instance of a program. It is made up of the
+            program instruction, data read from files, other programs or input from a system user.
+
+            Types of Processes -
+            There are fundamentally two types of processes in Linux:
+
+            Foreground processes (also referred to as interactive processes) - these are initialized and controlled
+            through a terminal session. In other words, there has to be a user connected to the system to start such
+            processes; they haven’t started automatically as part of the system functions/services.
+            Background processes (also referred to as non-interactive/automatic processes) - are processes not connected
+            to a terminal; they don't expect any user input.</p>
+        <p>Inter Process Communication (IPC) refers to a mechanism, where the operating systems allow various processes
+            to communicate with each other. This involves synchronizing their actions and managing shared data. This
+            tutorial covers a foundational understanding of IPC. Each of the chapters contain related topics with simple
+            and useful examples.</p>
+        <p>Disk storage is a necessity that brings with it some interesting and inescapable details. Obviously, a
+            filesystem is designed to provide space for non-volatile storage of data; that is its ultimate function.
+            However, there are many other important functions that flow from that requirement.
+
+            All filesystems need to provide a namespace—that is, a naming and organizational methodology. This defines
+            how a file can be named, specifically the length of a filename and the subset of characters that can be used
+            for filenames out of the total set of characters available. It also defines the logical structure of the
+            data on a disk, such as the use of directories for organizing files instead of just lumping them all
+            together in a single, huge conglomeration of files.</p>
+        <img src="images/IMG19.jpg" alt="Linux Photo">
+        <p>A Linux file system is a structured collection of files on a disk drive or a partition. A partition is a
+            segment of memory and contains some specific data. In our machine, there can be various partitions of the
+            memory. Generally, every partition contains a file system.
+
+            The general-purpose computer system needs to store data systematically so that we can easily access the
+            files in less time. It stores the data on hard disks (HDD) or some equivalent storage type. There may be
+            below reasons for maintaining the file system:
+
+            Primarily the computer saves data to the RAM storage; it may lose the data if it gets turned off. However,
+            there is non-volatile RAM (Flash RAM and SSD) that is available to maintain the data after the power
+            interruption.
+            Data storage is preferred on hard drives as compared to standard RAM as RAM costs more than disk space. The
+            hard disks costs are dropping gradually comparatively the RAM.
+            The Linux file system contains the following sections:
+
+            The root directory (/)
+            A specific data storage format (EXT3, EXT4, BTRFS, XFS and so on)
+            A partition or logical volume having a particular file system.</p>
+        <p>An interrupt is an event that alters the normal execution flow of a program and can be generated by hardware
+            devices or even by the CPU itself. When an interrupt occurs the current flow of execution is suspended and
+            interrupt handler runs. After the interrupt handler runs the previous execution flow is resumed.</p>
+        <p>Device files usually provide simple interfaces to standard devices (such as printers and serial ports), but
+            can also be used to access specific unique resources on those devices, such as disk partitions.
+            Additionally, device files are useful for accessing system resources that have no connection with any actual
+            device, such as data sinks and random number generators.
+
+            There are two general kinds of device files in Unix-like operating systems, known as character special files
+            and block special files. The difference between them lies in how much data is read and written by the
+            operating system and hardware. These together can be called device special files in contrast to named pipes,
+            which are not connected to a device but are not ordinary files either.</p>
+        <p>Nowadays the Linux memory management of a SAP system (application server) or SAP HANA system getting more
+            important since the clear roadmap of SAP (Linux as only OS for HANA) is showing that the amount of Linux
+            installations is rising steeply.
+
+            One of the worst things which could happen to such a system in context of performance is swapping or paging.
+            But is swapping and paging the same?
+            A lot of people mean paging when they are talking about swapping. Swapping is the older method of moving
+            data from memory to disk. To swap a process means to move that entire process out of main memory and to the
+            swap area on hard disk, whereby all pages of that process are moved at the same time.</p>
+        <p>With paging, when the kernel requires more main memory for an active process, only the least recently used
+            pages of processes are moved to the swap space.
+
+            The most common Linux systems are mixed mode systems using paging and swapping.
+
+            A lot of customers are asking me in context of monitoring if the systems behavior is correct when the used
+            memory is close to the physical memory size. As you may know there is a big difference in cause of the Unix
+            memory concept and how an application handles its memory. The OS memory monitoring is totally useless if you
+            want to use it for monitoring HANA systems.</p>
+        <h2 id="primary">Linux Quiz</h2>
+        <p>(Note:- Click on the triangle icon located at the start of the questions to verify your answer!)</p>
+        <details>
+            <summary> Identify the command which is used to create Linux File systems: <br> (a) fsck <br> (b) mkfs <br>
+                (c) fdisk <br> (d) mount </summary>
+            Answer - (b) mkfs
+        </details>
+        <br>
+        <details>
+            <summary> GNU stands for: <br> (a) Greek Needed Unix <br>
+                (b) General Unix <br> (c)
+                GNU's Not Unix <br> (d) General Noble Unix </summary>
+            Answer - (c) GNU's Not Unix
+        </details>
+        <br>
+        <details>
+            <summary> What is the core of the Linux operating system: <br> (a) Terminal <br>
+                (b) Kernel <br> (c) Command <br> (d) Processing </summary>
+            Answer - (b) Kernel
+        </details>
+        <br>
+        <details>
+            <summary> Identify the OS which is not based on Linux: <br> (a) Ubuntu <br>
+                (b) CentOS <br> (c) BSD <br> (d) Red Hat </summary>
+            Answer - (c) BSD
+        </details>
+        <br>
+        <details>
+            <summary> Identify the default file system type of Linux: <br> (a) ext3 <br>
+                (b) ext2 <br> (c) ext <br> (d) mimix
+                Startup </summary>
+            Answer - (a) ext3
+        </details>
+        <br>
+    </div>
+</body>
+
+</html>

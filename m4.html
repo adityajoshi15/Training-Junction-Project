@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 4 - Network</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Alata&family=Bangers&family=Bebas+Neue&family=Concert+One&family=Fira+Sans+Extra+Condensed&family=Kalam:wght@700&family=Oswald:wght@600&family=Sofia+Sans+Extra+Condensed&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            color: white;
+            background-color: rgb(29, 29, 29);
+            /* border: 2px solid white; */
+            /* font-family: 'Acme', sans-serif; */
+            /* font-family: 'Alata', sans-serif; */
+            /* font-family: 'Bangers', cursive; */
+            /* font-family: 'Bebas Neue', cursive; */
+            /* font-family: 'Concert One', cursive; */
+            /* font-family: 'Fira Sans Extra Condensed', sans-serif; */
+            /* font-family: 'Kalam', cursive; */
+            font-family: 'Oswald', sans-serif;
+            /* font-family: 'Sofia Sans Extra Condensed', sans-serif; */
+        }
+
+        body img {
+            height: 250px;
+            display: block;
+            margin: auto;
+            border: 2px solid white;
+        }
+
+        #primary {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .container {
+            /* border: 2px solid red; */
+            height: 100%;
+            width: 100%;
+            margin: 8px;
+        }
+
+        .container p {
+            font-size: 20px;
+            /* border: 2px solid white; */
+            /* font-family: 'Acme', sans-serif; */
+            /* font-family: 'Alata', sans-serif; */
+            /* font-family: 'Bangers', cursive; */
+            /* font-family: 'Bebas Neue', cursive; */
+            /* font-family: 'Concert One', cursive; */
+            /* font-family: 'Fira Sans Extra Condensed', sans-serif; */
+            font-family: 'Kalam', cursive;
+            /* font-family: 'Oswald', sans-serif; */
+            /* font-family: 'Sofia Sans Extra Condensed', sans-serif; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="primary">Module 4 - Network</h1>
+    <img src="images/IMG20.png" alt="Network Photo">
+    <div class="container">
+        <p>Networking, also known as computer networking, is the practice of transporting and exchanging data between
+            nodes over a shared medium in an information system. Networking comprises not only the design, construction
+            and use of a network, but also the management, maintenance and operation of the network infrastructure,
+            software and policies.
+
+            Computer networking enables devices and endpoints to be connected to each other on a local area network
+            (LAN) or to a larger network, such as the internet or a private wide area network (WAN). This is an
+            essential function for service providers, businesses and consumers worldwide to share resources, use or
+            offer services, and communicate. Networking facilitates everything from telephone calls to text messaging to
+            streaming video to the internet of things (IoT).
+
+            The level of skill required to operate a network directly correlates to the complexity of a given network.
+            For example, a large enterprise may have thousands of nodes and rigorous security requirements, such as
+            end-to-end encryption, requiring specialized network administrators to oversee the network.
+
+            At the other end of the spectrum, a layperson may set up and perform basic troubleshooting for a home Wi-Fi
+            network with a short instruction manual. Both examples constitute computer networking.</p>
+        <img src="images/IMG21.png" alt="Network Photo">
+        <p>Types of networking -
+            There are two primary types of computer networking: wired networking and wireless networking.
+
+            Wired networking requires the use of a physical medium for transport between nodes. Copper-based Ethernet
+            cabling, popular due to its low cost and durability, is commonly used for digital communications in
+            businesses and homes. Alternatively, optical fiber is used to transport data over greater distances and at
+            faster speeds, but it has several tradeoffs, including higher costs and more fragile components.
+
+            Wireless networking uses radio waves to transport data over the air, enabling devices to be connected to a
+            network without any cabling. Wireless LANs are the most well-known and widely deployed form of wireless
+            networking. Alternatives include microwave, satellite, cellular and Bluetooth, among others.
+
+            As a general rule, wired networking offers greater speed, reliability and security compared to wireless
+            networks; wireless networking tends to provide more flexibility, mobility and scalability.
+
+            It should be noted that these types of networking concern the physical layer of the network. Networking can
+            also be classified according to how it's built and designed, encompassing approaches that include
+            software-defined networking (SDN) or overlay networks. Networking can also be categorized by environment and
+            scale, such as LAN, campus, WAN, data center networks or storage area networks.</p>
+        <p>Network Devices: Network devices, also known as networking hardware, are physical devices that allow hardware
+            on a computer network to communicate and interact with one another. For example Repeater, Hub, Bridge,
+            Switch, Routers, Gateway, Brouter, and NIC, etc.</p>
+        <p>1. Repeater - A repeater operates at the physical layer. Its job is to regenerate the signal over the same
+            network before the signal becomes too weak or corrupted to extend the length to which the signal can be
+            transmitted over the same network. An important point to be noted about repeaters is that they do not
+            amplify the signal. When the signal becomes weak, they copy it bit by bit and regenerate it at its star
+            topology connectors connecting if original strength. It is a 2-port device.</p>
+        <p>2. Hub - A hub is a basically multi-port repeater. A hub connects multiple wires coming from different
+            branches, for example, the connector in star topology which connects different stations. Hubs cannot filter
+            data, so data packets are sent to all connected devices. In other words, the collision domain of all hosts
+            connected through Hub remains one. Also, they do not have the intelligence to find out the best path for
+            data packets which leads to inefficiencies and wastage. Active Hub:- These are the hubs that have their
+            power supply and can clean, boost, and relay the signal along with the network. It serves both as a repeater
+            as well as a wiring center. These are used to extend the maximum distance between nodes.
+            Passive Hub:- These are the hubs that collect wiring from nodes and power supply from the active hub. These
+            hubs relay signals onto the network without cleaning and boosting them and can’t be used to extend the
+            distance between nodes.
+            Intelligent Hub:- It works like an active hub and includes remote management capabilities. They also provide
+            flexible data rates to network devices. It also enables an administrator to monitor the traffic passing
+            through the hub and to configure each port in the hub.</p>
+        <p>3. Bridge - A bridge operates at the data link layer. A bridge is a repeater, with add on the functionality
+            of filtering content by reading the MAC addresses of the source and destination. It is also used for
+            interconnecting two LANs working on the same protocol. It has a single input and single output port, thus
+            making it a 2 port device.
+
+            Types of Bridges
+
+            Transparent Bridges:- These are the bridge in which the stations are completely unaware of the bridge’s
+            existence i.e. whether or not a bridge is added or deleted from the network, reconfiguration of the stations
+            is unnecessary. These bridges make use of two processes i.e. bridge forwarding and bridge learning.
+            Source Routing Bridges:- In these bridges, routing operation is performed by the source station and the
+            frame specifies which route to follow. The host can discover the frame by sending a special frame called the
+            discovery frame, which spreads through the entire network using all possible paths to the destination.</p>
+        <p>4. Switch - A switch is a multiport bridge with a buffer and a design that can boost its efficiency(a large
+            number of ports imply less traffic) and performance. A switch is a data link layer device. The switch can
+            perform error checking before forwarding data, which makes it very efficient as it does not forward packets
+            that have errors and forward good packets selectively to the correct port only. In other words, the switch
+            divides the collision domain of hosts, but the broadcast domain remains the same.</p>
+        <p>5. Routers - A router is a device like a switch that routes data packets based on their IP addresses. The
+            router is mainly a Network Layer device. Routers normally connect LANs and WANs and have a dynamically
+            updating routing table based on which they make decisions on routing the data packets. The router divides
+            the broadcast domains of hosts connected through it.</p>
+        <p>6. Gateway A gateway, as the name suggests, is a passage to connect two networks that may work upon different
+            networking models. They work as messenger agents that take data from one system, interpret it, and transfer
+            it to another system. Gateways are also called protocol converters and can operate at any network layer.
+            Gateways are generally more complex than switches or routers. A gateway is also called a protocol converter.
+        </p>
+        <p>7. Brouter - It is also known as the bridging router is a device that combines features of both bridge and
+            router. It can work either at the data link layer or a network layer. Working as a router, it is capable of
+            routing packets across networks and working as the bridge, it is capable of filtering local area network
+            traffic.</p>
+        <p>8. NIC - NIC or network interface card is a network adapter that is used to connect the computer to the
+            network. It is installed in the computer to establish a LAN. It has a unique id that is written on the chip,
+            and it has a connector to connect the cable to it. The cable acts as an interface between the computer and
+            the router or modem. NIC card is a layer 2 device which means that it works on both the physical and data
+            link layers of the network model.</p>
+        <p>A computer network is a group of computers connected with each other through a transmission medium such as
+            cable, wire etc. There are mainly three types of computer networks based on their size:
+            1. Local Area Network (LAN)
+            2. Metropolitan Area Network (MAN)
+            3. Wide area network (WAN)</p>
+        <p>1. Local Area Network (LAN) -
+            1. Local area network is a group of computers connected with each other in a small places such as school,
+            hospital, apartment etc.
+            2. LAN is secure because there is no outside connection with the local area network thus the data which is
+            shared is safe on the local area network and can't be accessed outside.
+            3. LAN due to their small size are considerably faster, their speed can range anywhere from 100 to 100Mbps.
+            4. LANs are not limited to wire connection, there is a new evolution to the LANs that allows local area
+            network to work on a wireless connection.</p>
+        <p>2. Metropolitan Area Network (MAN) -
+            MAN network covers larger area by connections LANs to a larger network of computers. In Metropolitan area
+            network various Local area networks are connected with each other through telephone lines. The size of the
+            Metropolitan area network is larger than LANs and smaller than WANs(wide area networks), a MANs covers the
+            larger area of a city or town.</p>
+        <p>3. Wide area network (WAN) -
+            Wide area network provides long distance transmission of data. The size of the WAN is larger than LAN and
+            MAN. A WAN can cover country, continent or even a whole world. Internet connection is an example of WAN.
+            Other examples of WAN are mobile broadband connections such as 3G, 4G etc.
+
+            Advantages of WAN:
+            Centralized infrastructure: One of the main advantage of WAN is the that we do not need to maintain the
+            backup and store data on local system as everything is stored online on a data centre, from where we can
+            access the data through WAN.
+
+            Privacy: We can setup the WAN in such a way that it encrypts the data that we share online that way the data
+            is secure and minimises the risk of unauthorized access.
+
+            Increased Bandwidth: With the WAN we get to choose the bandwidth based on the need, a large organization can
+            have larger bandwidth that can carry large amount of data faster and efficiently.
+
+            Area: A WAN can cover a large area or even a whole world though internet connection thus we can connect with
+            the person in another country through WAN which is not possible is other type of computer networks.
+
+            Disadvantages of WAN:
+            Antivirus: Since our systems are connected with the large amount of systems, there is possibility that we
+            may unknowingly download the virus that can affect our system and become threat to our privacy and may lead
+            to data loss.
+            Expensive: Cost of installation is very high.
+            Issue resolution: Issue resolution takes time as the WAN covers large area, it is really difficult to pin
+            point the exact location where the issues raised and causing the problem.
+
+            Interconnection of Networks:
+            We have read LAN, MAN and WAN above, we also talked about internet. You can say that an internet is a
+            combination of LAN, MAN and WAN.</p>
+        <img src="images/IMG22.png" alt="Network Photo">
+        <p>Geometric representation of how the computers are connected to each other is known as topology. There are
+            eight types of topology - Mesh, Star, Bus, Ring, Hybrid, Tree, P2P and Daisy chain.</p>
+        <p>In mesh topology each device is connected to every other device on the network through a dedicated
+            point-to-point link. When we say dedicated it means that the link only carries data for the two connected
+            devices only. Lets say we have n devices in the network then each device must be connected with (n-1)
+            devices of the network. Number of links in a mesh topology of n devices would be n(n-1)/2.
+
+            There are two types of Mesh topology:
+
+            Full Mesh Topology: In this topology each device is connected to all the devices available on the network.
+            Partial Mesh Topology: In partial mesh topology, each device is connected to only those devices, to which
+            they communicate frequently. This reduces redundant links and saves the setup cost.</p>
+        <p>In star topology each device in the network is connected to a central device called hub. Unlike Mesh
+            topology, star topology doesn't allow direct communication between devices, a device must have to
+            communicate through hub.
+
+            If one device wants to send data to other device, it has to first send the data to hub and then the hub
+            transmit that data to the designated device.
+
+            The central device is known as hub and other devices connected to hub are called clients. Generally Coaxial
+            cable or RJ-45 cables are used to connect the clients to the hub.</p>
+        <p>In bus topology there is a main cable and all the devices are connected to this main cable through drop
+            lines. There is a device called tap that connects the drop line to the main cable. Since all the data is
+            transmitted over the main cable, there is a limit of drop lines and the distance a main cable can have.
+
+            The main cable that is connected to the devices on the network using drop line is called backbone cable.
+            The main cable broadcast the message to all the devices connected to it.
+            When a device wants to sends a message, it transmits the message to the backbone cable. All the other
+            devices connected to the backbone cable receives the message whether they are intended to receive the
+            message or not.
+            The most common access method of the bus topologies is CSMA (Carrier Sense Multiple Access). This method is
+            used to prevent the collision of data as two or more devices can send the data to main cable at the same
+            time.
+            CSMA: This method is developed to decrease the chance of collisions when two or more devices starts sending
+            the signal at the same time.
+
+            CSMA CD (Carrier Sense Multiple Access with Collision Detection): In this method, a device monitors the
+            transmission medium after it sends the data to see if the transmission was successful. If successful, the
+            device marks the communication successful else it sends the data again.
+            CSMA CA (Carrier Sense Multiple Access with Collision Avoidance): This method tries to prevent the collision
+            from happening. In this method, before sending the data, the device checks the transmission medium to see if
+            it is busy or not. If busy, then the sender device waits until the transmission medium becomes idle.</p>
+        <p>In ring topology each device is connected with the two devices on either side of it. There are two dedicated
+            point to point links a device has with the devices on the either side of it. This structure forms a ring
+            thus it is known as ring topology.
+
+            If a device wants to send data to another device then it sends the data in one direction, each device in
+            ring topology has a repeater, if the received data is intended for other device then repeater forwards this
+            data until the intended device receives it.
+
+            Data flow is unidirectional in ring topology.
+            This topology doesn't have any end points as nodes are connected in circular fashion.
+            The data transfers in ring topology in clockwise direction.
+            The popular access method used in ring topology is token passing method. The word token describes segment of
+            data send through the network. There are multiple tokens available on the network, the device that
+            successfully acquires the token attaches the data to the token. The device that successfully decodes the
+            token, receives the data.</p>
+        <p>A combination of two or more topology is known as hybrid topology. For example a combination of star and bus
+            topology is known as star bus hybrid topology, this topology is shown in the above diagram.</p>
+        <p>Tree topology is an example of hybrid topology as it is a combination of star topology and bus topology that
+            forms a tree like structure.
+            The devices are connected to each other in hierarchical manner. Each node has arbitrary number of child
+            nodes. The device at the top of the hierarchy is known as root node and other devices that are lower in
+            hierarchy known as descendants of the root node.
+            There is a single path between two devices and this is the path of the communication between devices.
+            Tree topology is also called star-bus topology.</p>
+        <p>In Peer to Peer topology, two devices are connected to each other directly. There is no client and server in
+            P2P topology as both the devices serve the purpose of client and server both. Torrent is an example of P2P
+            topology as one computer can download the data as well as upload the data to another computer. In P2P, these
+            two devices can be two computers, routers, switches etc. The client is the computer that requests the data
+            and server is the computer that serves the request by sending data. In P2P, both the devices can request as
+            well as send the data.</p>
+        <p>In Daisy Chain Topology, all devices are connected in a linear fashion. Consider it as a ring topology where
+            the last device is not connected to the first device. Every device in the daisy chain network is connected
+            to immediate left and right neighbour devices, except the first and last device.
+
+            The intermediate device helps in propagating the signal by relaying it until it reaches the destination.
+            Consider ring topology as an advanced version of this topology, by joining first and last devices in this
+            topology a ring topology can be formed.</p>
+        <img src="images/IMG23.jpg" alt="Network Photo">
+        <p>OSI stands for Open Systems Interconnection. It has been developed by ISO - 'International Organization for
+            Standardization', in the year 1984. It is a 7 layer architecture with each layer having specific
+            functionality to perform. All these 7 layers work collaboratively to transmit the data from one person to
+            another across the globe.</p>
+        <p>1. Physical Layer (Layer 1) :
+            The lowest layer of the OSI reference model is the physical layer. It is responsible for the actual physical
+            connection between the devices. The physical layer contains information in the form of bits. It is
+            responsible for transmitting individual bits from one node to the next. When receiving data, this layer will
+            get the signal received and convert it into 0s and 1s and send them to the Data Link layer, which will put
+            the frame back together. The functions of the physical layer are as follows:
+
+            Bit synchronization: The physical layer provides the synchronization of the bits by providing a clock. This
+            clock controls both sender and receiver thus providing synchronization at bit level.
+            Bit rate control: The Physical layer also defines the transmission rate i.e. the number of bits sent per
+            second.
+            Physical topologies: Physical layer specifies the way in which the different, devices/nodes are arranged in
+            a network i.e. bus, star, or mesh topology.
+            Transmission mode: Physical layer also defines the way in which the data flows between the two connected
+            devices. The various transmission modes possible are Simplex, half-duplex and full-duplex.</p>
+        <p>2. Data Link Layer (DLL) (Layer 2) :
+            The data link layer is responsible for the node-to-node delivery of the message. The main function of this
+            layer is to make sure data transfer is error-free from one node to another, over the physical layer. When a
+            packet arrives in a network, it is the responsibility of DLL to transmit it to the Host using its MAC
+            address.
+            Data Link Layer is divided into two sublayers:
+
+            Logical Link Control (LLC)
+            Media Access Control (MAC)
+            The packet received from the Network layer is further divided into frames depending on the frame size of
+            NIC(Network Interface Card). DLL also encapsulates Sender and Receiver’s MAC address in the header.
+
+            The Receiver's MAC address is obtained by placing an ARP(Address Resolution Protocol) request onto the wire
+            asking “Who has that IP address?” and the destination host will reply with its MAC address. The functions of
+            the Data Link layer are :
+
+            Framing: Framing is a function of the data link layer. It provides a way for a sender to transmit a set of
+            bits that are meaningful to the receiver. This can be accomplished by attaching special bit patterns to the
+            beginning and end of the frame.
+            Physical addressing: After creating frames, the Data link layer adds physical addresses (MAC address) of the
+            sender and/or receiver in the header of each frame.
+            Error control: Data link layer provides the mechanism of error control in which it detects and retransmits
+            damaged or lost frames.
+            Flow Control: The data rate must be constant on both sides else the data may get corrupted thus, flow
+            control coordinates the amount of data that can be sent before receiving acknowledgement.
+            Access control: When a single communication channel is shared by multiple devices, the MAC sub-layer of the
+            data link layer helps to determine which device has control over the channel at a given time.</p>
+        <p>3. Network Layer (Layer 3) :
+            The network layer works for the transmission of data from one host to the other located in different
+            networks. It also takes care of packet routing i.e. selection of the shortest path to transmit the packet,
+            from the number of routes available. The sender & receiver's IP addresses are placed in the header by the
+            network layer.
+
+            The functions of the Network layer are : Routing: The network layer protocols determine which route is
+            suitable from source to destination. This function of the network layer is known as routing.
+            Logical Addressing: In order to identify each device on internetwork uniquely, the network layer defines an
+            addressing scheme. The sender & receiver's IP addresses are placed in the header by the network layer. Such
+            an address distinguishes each device uniquely and universally.</p>
+        <p>4. Transport Layer (Layer 4) :
+            The transport layer provides services to the application layer and takes services from the network layer.
+            The data in the transport layer is referred to as Segments. It is responsible for the End to End Delivery of
+            the complete message. The transport layer also provides the acknowledgement of the successful data
+            transmission and re-transmits the data if an error is found.
+
+            At sender's side: Transport layer receives the formatted data from the upper layers, performs Segmentation,
+            and also implements Flow & Error control to ensure proper data transmission. It also adds Source and
+            Destination port numbers in its header and forwards the segmented data to the Network Layer.</p>
+        <p>5. Session Layer (Layer 5) :
+            This layer is responsible for the establishment of connection, maintenance of sessions, authentication, and
+            also ensures security.
+            The functions of the session layer are :
+
+            Session establishment, maintenance, and termination: The layer allows the two processes to establish, use
+            and terminate a connection.
+            Synchronization: This layer allows a process to add checkpoints which are considered synchronization points
+            into the data. These synchronization points help to identify the error so that the data is re-synchronized
+            properly, and ends of the messages are not cut prematurely and data loss is avoided.
+            Dialog Controller: The session layer allows two systems to start communication with each other in
+            half-duplex or full-duplex.</p>
+        <p>6. Presentation Layer (Layer 6):
+            The presentation layer is also called the Translation layer. The data from the application layer is
+            extracted here and manipulated as per the required format to transmit over the network.
+            The functions of the presentation layer are :
+
+            Translation: For example, ASCII to EBCDIC.
+            Encryption/ Decryption: Data encryption translates the data into another form or code. The encrypted data is
+            known as the ciphertext and the decrypted data is known as plain text. A key value is used for encrypting as
+            well as decrypting data.
+            Compression: Reduces the number of bits that need to be transmitted on the network.</p>
+        <p>7. Application Layer (Layer 7) :
+            At the very top of the OSI Reference Model stack of layers, we find the Application layer which is
+            implemented by the network applications. These applications produce the data, which has to be transferred
+            over the network. This layer also serves as a window for the application services to access the network and
+            for displaying the received information to the user.
+
+            Example: Application - Browsers, Skype Messenger, etc. The functions of the Application layer are :
+
+            Network Virtual Terminal,
+            FTAM-File transfer access and management,
+            Mail Services,
+            Directory Services.</p>
+        <p>NTP (network time protocol) is a protocol for clock synchronization in computer systems described in RFC 958.
+            It is based on the connectionless UDP protocol (port 123) and belongs to the internet protocol family. For
+            the synchronization process, NTP relies on coordinated universal time (UTC), which is obtained from the
+            individual clients and servers in a hierarchical system.</p>
+        <p>DNS is a directory of names that correspond to specific IP addresses, however it is not a single directory.
+            Just like the Internet, the DNS is also You can think of DNS as the contact list on your smartphone, where
+            each contact corresponds to a particular mobile number.
+
+            DHCP is a network management protocol that automates the process of configuring the devices on IP networks,
+            thus allowing them to use the various network services. A DHCP server dynamically assigns an IP address and
+            other network configuration parameters to each device on a network so that they can communicate with other
+            IP networks.</p>
+        <p>SSH or Secure SHell is now only major protocol to access the network devices and servers over the internet.
+            SSH was developed by SSH Communications Security Ltd., it is a program to log into another computer over a
+            network, to execute commands in a remote machine, and to move files from one machine to another. Telnet is
+            the joint abbreviation of Telecommunications and Networks and it is a networking protocol best known for
+            UNIX platform. Telnet uses the port 23 and it was designed specifically for local area networks.</p>
+        <img src="images/IMG24.jpg" alt="Network Photo">
+        <p>DHCP protocol (Dynamic Host Configuration Protocol) is commonly used in networks for dynamic IP addressing
+            configuration. Every user's device needs at least an IP address to join the network and connect to services.
+            When the computer first connects to a local network with cable or WiFi SSID, first thing is to look for the
+            IP address, netmask, default gateway and DNS servers.</p>
+        <p>The Domain Name System (DNS) is one of the foundations of the internet, working in the background to match
+            the names of web sites that people type into a search box with the corresponding IP address, a long string
+            of numbers that no one could be expected to remember.
+
+            It's still possible for someone to type an IP address into a browser to reach a website, but most people
+            want an internet address to consist of easy-to-remember words, called domain names. (For example, Network
+            World.) When your computer wants to find the IP address associated with a domain name, it first makes its
+            DNS query via a DNS client, typically in a Web browser. The query then goes to a recursive DNS server, also
+            known as a recursive resolver. A recursive resolver is typically operated by an Internet Service Providers
+            (ISP), such as AT&T or Verizon (or some other third-party), and it knows which other DNS servers it needs to
+            ask to resolve the name of a site with its IP address. The servers that actually have the needed information
+            are called authoritative name servers.
+
+            DNS is organized in a hierarchy. An initial DNS query for an IP address is made to a recursive resolver.
+            This search first leads to a root server, which has information on top-level domains (.com, .net, .org), as
+            well as country domains. Root servers are located all around the world, so the DNS system routes the request
+            to the closest one.</p>
+        <p>A directory service is a database for storing and maintaining information about users and resources.
+            Directory Services are often referred to as directories, user stores, Identity Stores, or LDAP Directory,
+            and they store information such as usernames, passwords, user preferences, information about devices, and
+            more. Network and system administrators use directory services to onboard users, manage access privileges
+            and monitor and control access to applications and infrastructure resources. For example, when a user
+            accesses an application, that application will reference the directory service to ensure the user is
+            legitimate and has the proper privileges to access and use that application.
+
+            Directory services are fundamental elements of an Identity Security strategy. Many identity and access
+            management (IAM) solutions use directory services in conjunction with single sign-on (SSO), multi-factor
+            authentication (MFA) or identity lifecycle management functionality.</p>
+        <p>The Lightweight Directory Access Protocol (LDAP) is an open, vendor-neutral, industry standard
+            application protocol for accessing and maintaining distributed directory information services over an
+            Internet Protocol (IP) network.[1] Directory services play an important role in developing intranet and
+            Internet applications by allowing the sharing of information about users, systems, networks, services, and
+            applications throughout the network.[2] As examples, directory services may provide any organized set of
+            records, often with a hierarchical structure, such as a corporate email directory. Similarly, a telephone
+            directory is a list of subscribers with an address and a phone number.</p>
+        <p>E-mail System:
+            E-mail system comprises of the following three components:
+
+            Mailer,
+
+            Mail Server,
+
+            Mailbox
+
+            Mailer:
+            It is also called mail program, mail application or mail client. It allows us to manage, read and compose
+            e-mail.
+
+            Mail Server:
+            The function of mail server is to receive, store and deliver the email. It is must for mail servers to be
+            Running all the time because if it crashes or is down, email can be lost.
+
+            Mailboxes:
+            Mailbox is generally a folder that contains emails and information about them.
+
+            Working of E-mail:
+            Email working follows the client server approach. In this client is the mailer i.e. the mail application or
+            mail program and server is a device that manages emails.
+
+            Following example will take you through the basic steps involved in sending and receiving emails and will
+            give you a better understanding of working of email system:
+
+            Suppose person A wants to send an email message to person B.
+
+            Person A composes the messages using a mailer program i.e. mail client and then select Send option.
+
+            The message is routed to Simple Mail Transfer Protocol to person B's mail server.
+
+            The mail server stores the email message on disk in an area designated for person B.</p>
+        <p>Working of email: Email messages are composed using an email program (an email client).
+            The email program assembles the email by combining the message content (the body) with the recipient,
+            subject, date, and time (the header).
+            Email relies on a set of protocols to arrive at the correct destination.
+            The email program (the email client) comes in two forms, a web-based version like Gmail, where users must
+            log in through their browser to access their emails, or a client-based version such as Outlook, where users
+            install software to access emails from their local computer.</p>
+        <p>Messaging Application Programming Interface (MAPI) is an API for Microsoft Windows which allows programs to
+            become email-aware. While MAPI is designed to be independent of the protocol, it is usually used to
+            communicate with Microsoft Exchange Server.</p>
+        <p>A proxy server acts as a gateway between you and the internet. It’s an intermediary server separating end
+            users from the websites they browse. Proxy servers provide varying levels of functionality, security, and
+            privacy depending on your use case, needs, or company policy.
+
+            If you're using a proxy server, internet traffic flows through the proxy server on its way to the address
+            you requested. The request then comes back through that same proxy server (there are exceptions to this
+            rule), and then the proxy server forwards the data received from the website to you.</p>
+        <p>Every computer on the internet needs to have a unique Internet Protocol (IP) Address. Think of this IP
+            address as your computer's street address. Just as the post office knows to deliver your mail to your street
+            address, the internet knows how to send the correct data to the correct computer by the IP address.
+
+            A proxy server is basically a computer on the internet with its own IP address that your computer knows.
+            When you send a web request, your request goes to the proxy server first. The proxy server then makes your
+            web request on your behalf, collects the response from the web server, and forwards you the web page data so
+            you can see the page in your browser.
+
+            When the proxy server forwards your web requests, it can make changes to the data you send and still get you
+            the information that you expect to see. A proxy server can change your IP address, so the web server doesn't
+            know exactly where you are in the world. It can encrypt your data, so your data is unreadable in transit.
+            And lastly, a proxy server can block access to certain web pages, based on IP address.</p>
+        <p>Web service is a standardized medium to propagate communication between the client and server applications on
+            the WWW (World Wide Web). A web service is a software module that is designed to perform a certain set of
+            tasks. The main component of a web service design is the data which is transferred between the client and
+            the server, and that is XML. XML (Extensible markup language) is a counterpart to HTML and easy to
+            understand the intermediate language that is understood by many programming languages.
+
+            So when applications talk to each other, they actually talk in XML. This provides a common platform for
+            application developed in various programming languages to talk to each other.
+
+            Web services use something known as SOAP (Simple Object Access Protocol) for sending the XML data between
+            applications. The data is sent over normal HTTP. The data which is sent from the web service to the
+            application is called a SOAP message. The SOAP message is nothing but an XML document. Since the document is
+            written in XML, the client application calling the web service can be written in any programming language.
+        </p>
+        <p>Binary number system is a number system which is based on 2. What exactly is "based on 2"?? Well, you have
+            only two characters ("0" and "1") to define and represent the entire numbers in binary number system.
+
+            Decimal number system is a number system which is based on 10. What exactly is "based on 10"?? Well, you
+            have 10 characters ("0", "1", "2", "3", "4", "5", "6", "7", "8", "9") to to define and represent the entire
+            numbers in decimal number system.
+
+            Hexadecimal number system is a number system which is based on 16. What exactly is "based on 16"?? Well, you
+            have 16 characters ("0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F") to to
+            define and represent the entire numbers in Hexadecimal number system.</p>
+        <h2 id="primary">Network Quiz</h2>
+        <p>(Note:- Click on the triangle icon located at the start of the questions to verify your answer!)</p>
+        <details>
+            <summary> How long is an IPv6 address: <br> (a) 32 bits <br> (b) 128 bytes <br>
+                (c) 64 bits <br> (d) 128 bits </summary>
+            Answer - (d) 128 bits
+        </details>
+        <br>
+        <details>
+            <summary> Which protocol does DHCP use at the Transport layer: <br> (a) IP <br>
+                (b) TCP <br> (c) UDP <br> (d) ARP </summary>
+            Answer - (c) UDP
+        </details>
+        <br>
+        <details>
+            <summary> Where is a hub specified in the OSI model: <br> (a) Session Layer <br>
+                (b) Physical Layer <br> (c) Data Link Layer <br> (d) Application Layer </summary>
+            Answer - (b) Physical Layer
+        </details>
+        <br>
+        <details>
+            <summary> The main purpose of a data link content monitor is to: <br> (a) Detect problems in protocols <br>
+                (b) Measure bit error rates <br> (c) Determine the type of transmission used in a data link <br> (d)
+                Determine the type of switching used in a data link </summary>
+            Answer - (a) Detect problems in protocols
+        </details>
+        <br>
+        <details>
+            <summary> The physical layer of a network: <br> (a) Constructs packets of data and sends them across the
+                network <br> (b) Controls error detection and correction <br> (c) Defines the electrical characteristics
+                of signals
+                passed between the computer and communication devices <br> (d) None of these </summary>
+            Answer - (c) Defines the electrical characteristics of signals passed between the computer and communication
+            devices
+        </details>
+        <br>
+    </div>
+</body>
+
+</html>

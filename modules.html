@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modules</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Alata&family=Bangers&family=Bebas+Neue&family=Concert+One&family=Fira+Sans+Extra+Condensed&family=Kalam:wght@700&family=Oswald:wght@600&family=Sofia+Sans+Extra+Condensed&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url(images/BG11.jpg);
+            color: white;
+            /* font-family: 'Bangers', cursive; */
+            /* font-family: 'Bebas Neue', cursive; */
+            /* font-family: 'Kalam', cursive; */
+            font-family: 'Oswald', sans-serif;
+            /* font-family: 'Sofia Sans Extra Condensed', sans-serif; */
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            display: inline-block;
+        }
+
+        .mid {
+            /* border: 2px solid yellow; */
+            margin: 36px auto;
+            width: 38.8%;
+            display: block;
+        }
+
+        .right {
+            /* border: 2px solid blue; */
+            position: absolute;
+            top: 35px;
+            right: 15px;
+            display: inline-block;
+            width: 150px;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 18px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 1px 20px;
+            font-size: 22px;
+        }
+
+        .navbar li a:hover {
+            color: rgb(183, 183, 183);
+            text-decoration: underline;
+        }
+
+        /* .navbar li a:active {
+            color: rgb(183, 183, 183);
+            text-decoration: underline;
+        } */
+
+        .left img {
+            width: 100px;
+        }
+
+        .left div {
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .btn {
+            color: rgb(195, 195, 195);
+            background-color: black;
+            margin: 0px 4px;
+            padding: 2px 10px;
+            border: 2px solid rgb(195, 195, 195);
+            border-radius: 10px;
+            font-size: 12px;
+            cursor: pointer;
+            /* font-family: 'Concert One', cursive; */
+            /* font-family: 'Cuprum', sans-serif; */
+        }
+
+        .btn:hover {
+            background-color: rgb(52, 52, 52);
+        }
+
+        .list {
+            position: absolute;
+            top: 160px;
+            left: 50px;
+        }
+
+        .list li a {
+            color: white;
+            /* list-style: none; */
+            font-size: 1.5rem;
+            line-height: 70px;
+            text-decoration: none;
+        }
+
+        .list li a:hover {
+            color: rgb(47, 47, 47);
+            background-color: white;
+            /* border-radius: 6px; */
+        }
+
+        /* .list{
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        } */
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="images/logo1.jpg" alt="Image not found">
+            <div>Training Junction</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="http://127.0.0.1:5500/WEB%20DEVELOPMENT/PW2/index.html" target="_blank">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/WEB%20DEVELOPMENT/PW2/modules.html" target="_blank">Modules</a></li>
+                <li><a href="http://127.0.0.1:5500/WEB%20DEVELOPMENT/PW2/about.html" target="_blank">About Us</a></li>
+                <li><a href="http://127.0.0.1:5500/WEB%20DEVELOPMENT/PW2/contact.html" target="_blank">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Mail Us</button>
+            <button class="btn">Call Us</button>
+        </div>
+    </header>
+    <ul class="list">
+        <li class="item"><a href="http://127.0.0.1:5500/WEB%20DEVELOPMENT/PW2/m1.html" taeget="_blank">Module 1 -
+                Hardware</a></li>
+        <li class="item"><a href="http://127.0.0.1:5500/WEB%20DEVELOPMENT/PW2/m2.html" taeget="_blank">Module 2 -
+                Windows</a></li>
+        <li class="item"><a href="http://127.0.0.1:5500/WEB%20DEVELOPMENT/PW2/m3.html" taeget="_blank">Module 3 -
+                Linux</a></li>
+        <li class="item"><a href="http://127.0.0.1:5500/WEB%20DEVELOPMENT/PW2/m4.html" taeget="_blank">Module 4 -
+                Network</a></li>
+        <li class="item"><a href="http://127.0.0.1:5500/WEB%20DEVELOPMENT/PW2/m5.html" taeget="_blank">Module 5 -
+                Database</a></li>
+    </ul>
+</body>
+
+</html>

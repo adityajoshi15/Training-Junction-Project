@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Alata&family=Bangers&family=Bebas+Neue&family=Concert+One&family=Fira+Sans+Extra+Condensed&family=Kalam:wght@700&family=Oswald:wght@600&family=Sofia+Sans+Extra+Condensed&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            /* background: url(images/BG1.jpg); */
+            color: white;
+            background-color: antiquewhite;
+            /* font-family: 'Bangers', cursive; */
+            /* font-family: 'Bebas Neue', cursive; */
+            /* font-family: 'Kalam', cursive; */
+            font-family: 'Oswald', sans-serif;
+            /* font-family: 'Sofia Sans Extra Condensed', sans-serif; */
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            display: inline-block;
+        }
+
+        .mid {
+            /* border: 2px solid yellow; */
+            margin: 36px auto;
+            width: 38.8%;
+            display: block;
+        }
+
+        .right {
+            /* border: 2px solid blue; */
+            position: absolute;
+            top: 35px;
+            right: 15px;
+            display: inline-block;
+            width: 150px;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 18px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 1px 20px;
+            font-size: 22px;
+        }
+
+        .navbar li a:hover {
+            color: rgb(183, 183, 183);
+            text-decoration: underline;
+        }
+
+        /* .navbar li a:active {
+            color: rgb(183, 183, 183);
+            text-decoration: underline;
+        } */
+
+        .left img {
+            width: 100px;
+        }
+
+        .left div {
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .btn {
+            color: rgb(195, 195, 195);
+            background-color: black;
+            margin: 0px 4px;
+            padding: 2px 10px;
+            border: 2px solid rgb(195, 195, 195);
+            border-radius: 10px;
+            font-size: 12px;
+            cursor: pointer;
+            /* font-family: 'Concert One', cursive; */
+            /* font-family: 'Cuprum', sans-serif; */
+        }
+
+        .btn:hover {
+            background-color: rgb(52, 52, 52);
+        }
+
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 75px 100px;
+            justify-content: flex-start;
+            align-items: center;
+            height: 360px;
+        }
+
+        #home::before {
+            content: "";
+            background: url(images/BG4.jpg) no-repeat center center/cover;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 1;
+        }
+
+        .h-primary {
+            font-size: 35px;
+            padding: 12px;
+            font-family: 'Acme', sans-serif;
+            /* font-family: 'Alata', sans-serif; */
+            /* font-family: 'Bangers', cursive; */
+            /* font-family: 'Bebas Neue', cursive; */
+            /* font-family: 'Concert One', cursive; */
+            /* font-family: 'Fira Sans Extra Condensed', sans-serif; */
+            /* font-family: 'Kalam', cursive; */
+            /* font-family: 'Oswald', sans-serif; */
+            /* font-family: 'Sofia Sans Extra Condensed', sans-serif; */
+        }
+
+        #home h1 {
+            text-align: center;
+            /* font-family: 'Bangers', cursive; */
+            /* font-family: 'Bebas Neue', cursive; */
+            /* font-family: 'Kalam', cursive; */
+            /* font-family: 'Oswald', sans-serif; */
+            /* font-family: 'Sofia Sans Extra Condensed', sans-serif; */
+        }
+
+        #home p {
+            text-align: center;
+            font-size: 1rem;
+            /* font-family: 'Bangers', cursive; */
+            /* font-family: 'Bebas Neue', cursive; */
+            font-family: 'Kalam', cursive;
+            /* font-family: 'Oswald', sans-serif; */
+            /* font-family: 'Sofia Sans Extra Condensed', sans-serif; */
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .h-secondary {
+            font-size: 25px;
+            padding: 12px;
+            /* font-family: 'Acme', sans-serif; */
+            /* font-family: 'Alata', sans-serif; */
+            /* font-family: 'Bangers', cursive; */
+            /* font-family: 'Bebas Neue', cursive; */
+            font-family: 'Concert One', cursive;
+            /* font-family: 'Fira Sans Extra Condensed', sans-serif; */
+            /* font-family: 'Kalam', cursive; */
+            /* font-family: 'Oswald', sans-serif; */
+            /* font-family: 'Sofia Sans Extra Condensed', sans-serif; */
+        }
+
+        #services {
+            margin: 34px;
+            display: flex;
+        }
+
+        #services .box {
+            border: 2px solid brown;
+            padding: 34px;
+            margin: 4px;
+            border-radius: 25px;
+            background-color: rgb(216 215 215);
+            color: black;
+        }
+
+        #services .box img {
+            height: 160px;
+            margin: auto;
+            display: block;
+        }
+
+        /* #services-container h1 {
+            color: black;
+        } */
+
+        #services .box p {
+            font-family: 'Acme', sans-serif;
+            /* font-family: 'Alata', sans-serif; */
+            /* font-family: 'Bangers', cursive; */
+            /* font-family: 'Bebas Neue', cursive; */
+            /* font-family: 'Concert One', cursive; */
+            /* font-family: 'Fira Sans Extra Condensed', sans-serif; */
+            /* font-family: 'Kalam', cursive; */
+            /* font-family: 'Oswald', sans-serif; */
+            /* font-family: 'Sofia Sans Extra Condensed', sans-serif; */
+            text-align: justify;
+            font-size: 18px;
+        }
+
+        .services-container h1 {
+            color: black;
+        }
+
+        /* header{
+            position: sticky;
+        } */
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="images/logo1.jpg" alt="Image not found">
+            <div>Training Junction</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="http://127.0.0.1:5500/WEB%20DEVELOPMENT/PW2/index.html" target="_blank">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/WEB%20DEVELOPMENT/PW2/modules.html" target="_blank">Modules</a></li>
+                <li><a href="http://127.0.0.1:5500/WEB%20DEVELOPMENT/PW2/about.html" target="_blank">About Us</a></li>
+                <li><a href="http://127.0.0.1:5500/WEB%20DEVELOPMENT/PW2/contact.html" target="_blank">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Mail Us</button>
+            <button class="btn">Call Us</button>
+        </div>
+    </header>
+
+    <section id="home">
+        <h1 class="h-primary">Training Junction</h1>
+        <p>The world we are living in is full of data. But the problem is that the data is highly
+            unorganized. The students who are undergoing the training in various topics in their
+            final semester require a platform where they can find all the relevant information
+            about that topic and where they can also test their knowledge by taking quizzes. I developed a real world
+            solution for this problem by developing a website using web development that contains
+            all the important and required features for solving all this problems.</p>
+        <p>The goal was to build a website using web development that acts as a platform that
+            contains all the modules with the sufficient knowledge about the specific topic and
+            also creating quizzes at the end of each module to test the knowledge gained by the
+            user after going through all the content of the module. Hope that this project is helping all the users.
+        </p>
+
+    </section>
+
+    <section class="services-container">
+        <h1 class="h-primary center">Our Goals</h1>
+        <div id="services">
+            <div class="box">
+                <img src="images/IMG1.jpg" alt="Image not found">
+                <h2 class="h-secondary center">Best training material</h2>
+                <p>The aim is to provide the best quality content to the user so that they can train effectively and
+                    efficiently without wasting any time looking for the training material everywhere. The content here
+                    is provided by researching and analyzing and ensuring that it is to the point and highly helpful.
+                </p>
+            </div>
+            <div class="box">
+                <img src="images/IMG2.jpg" alt="Image not found">
+                <h2 class="h-secondary center">Quality over quantity</h2>
+                <p>The idea is to focus on quality instead of quantity so that the user can train up to the mark by
+                    grasping all the important details within less time. Quality is very crucial factor in achieving
+                    excellence. Keeping the quantity limited results in less confusion and optimum performance of the
+                    user.</p>
+            </div>
+            <div class="box">
+                <img src="images/IMG3.jpg" alt="Image not found">
+                <h2 class="h-secondary center">Active support</h2>
+                <p>The strategy is to provide active support to all our users by guiding them and helping them. The
+                    online connectivity handles are shared with the users and the users can connect with us through them
+                    anytime from anywhere around the world and we are determined to assist them with all our
+                    capabelities.</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

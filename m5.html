@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 5 - Database</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Alata&family=Bangers&family=Bebas+Neue&family=Concert+One&family=Fira+Sans+Extra+Condensed&family=Kalam:wght@700&family=Oswald:wght@600&family=Sofia+Sans+Extra+Condensed&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            color: white;
+            background-color: rgb(29, 29, 29);
+            /* border: 2px solid white; */
+            /* font-family: 'Acme', sans-serif; */
+            /* font-family: 'Alata', sans-serif; */
+            /* font-family: 'Bangers', cursive; */
+            /* font-family: 'Bebas Neue', cursive; */
+            /* font-family: 'Concert One', cursive; */
+            /* font-family: 'Fira Sans Extra Condensed', sans-serif; */
+            /* font-family: 'Kalam', cursive; */
+            font-family: 'Oswald', sans-serif;
+            /* font-family: 'Sofia Sans Extra Condensed', sans-serif; */
+        }
+
+        body img {
+            height: 250px;
+            display: block;
+            margin: auto;
+            border: 2px solid white;
+        }
+
+        #primary {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .container {
+            /* border: 2px solid red; */
+            height: 100%;
+            width: 100%;
+            margin: 8px;
+        }
+
+        .container p {
+            font-size: 20px;
+            /* border: 2px solid white; */
+            /* font-family: 'Acme', sans-serif; */
+            /* font-family: 'Alata', sans-serif; */
+            /* font-family: 'Bangers', cursive; */
+            /* font-family: 'Bebas Neue', cursive; */
+            /* font-family: 'Concert One', cursive; */
+            /* font-family: 'Fira Sans Extra Condensed', sans-serif; */
+            font-family: 'Kalam', cursive;
+            /* font-family: 'Oswald', sans-serif; */
+            /* font-family: 'Sofia Sans Extra Condensed', sans-serif; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="primary">Module 5 - Database</h1>
+    <img src="images/IMG25.jpg" alt="Database Photo">
+    <div class="container">
+        <p>A database is a collection of data, usually stored in electronic form. A database is typically designed so
+            that it is easy to store and access information.
+
+            A good database is crucial to any company or organisation. This is because the database stores all the
+            pertinent details about the company such as employee records, transactional records, salary details etc.</p>
+        <p>Manages large amounts of data:
+            A database stores and manages a large amount of data on a daily basis. This would not be possible using any
+            other tool such as a spreadsheet as they would simply not work.
+
+            Accurate:
+            A database is pretty accurate as it has all sorts of build in constraints, checks etc. This means that the
+            information available in a database is guaranteed to be correct in most cases.
+
+            Easy to update data:
+            In a database, it is easy to update data using various Data Manipulation languages (DML) available. One of
+            these languages is SQL.
+
+            Security of data:
+            Databases have various methods to ensure security of data. There are user logins required before accessing a
+            database and various access specifiers. These allow only authorised users to access the database.
+
+            Data integrity:
+            This is ensured in databases by using various constraints for data. Data integrity in databases makes sure
+            that the data is accurate and consistent in a database.
+
+            Easy to research data:
+            It is very easy to access and research data in a database. This is done using Data Query Languages (DQL)
+            which allow searching of any data in the database and performing computations on it.</p>
+        <p>In computing, a database is an organized collection of data stored and accessed electronically. Small
+            databases can be stored on a file system, while large databases are hosted on computer clusters or cloud
+            storage. The design of databases spans formal techniques and practical considerations, including data
+            modeling, efficient data representation and storage, query languages, security and privacy of sensitive
+            data, and distributed computing issues, including supporting concurrent access and fault tolerance.
+
+            A database management system (DBMS) is the software that interacts with end users, applications, and the
+            database itself to capture and analyze the data. The DBMS software additionally encompasses the core
+            facilities provided to administer the database. The sum total of the database, the DBMS and the associated
+            applications can be referred to as a database system. Often the term "database" is also used loosely to
+            refer to any of the DBMS, the database system or an application associated with the database.</p>
+        <p>A Database Management System (DBMS) is defined as the software system that allows users to define, create,
+            maintain and control access to the database. DBMS makes it possible for end users to create, read, update
+            and delete data in database. It is a layer between programs and data.
+
+            Compared to the File Based Data Management System, Database Management System has many advantages. Some of
+            these advantages are given below -
+
+            Reducing Data Redundancy:
+            The file based data management systems contained multiple files that were stored in many different locations
+            in a system or even across multiple systems. Because of this, there were sometimes multiple copies of the
+            same file which lead to data redundancy.
+
+            This is prevented in a database as there is a single database and any change in it is reflected immediately.
+            Because of this, there is no chance of encountering duplicate data.
+
+            Sharing of Data:
+            In a database, the users of the database can share the data among themselves. There are various levels of
+            authorisation to access the data, and consequently the data can only be shared based on the correct
+            authorisation protocols being followed.
+
+            Many remote users can also access the database simultaneously and share the data between themselves.
+
+            Data Integrity:
+            Data integrity means that the data is accurate and consistent in the database. Data Integrity is very
+            important as there are multiple databases in a DBMS. All of these databases contain data that is visible to
+            multiple users. So it is necessary to ensure that the data is correct and consistent in all the databases
+            and for all the users.
+
+            Data Security:
+            Data Security is vital concept in a database. Only authorised users should be allowed to access the database
+            and their identity should be authenticated using a username and password. Unauthorised users should not be
+            allowed to access the database under any circumstances as it violates the integrity constraints.
+
+            Privacy:
+            The privacy rule in a database means only the authorized users can access a database according to its
+            privacy constraints. There are levels of database access and a user can only view the data he is allowed to.
+            For example - In social networking sites, access constraints are different for different accounts a user may
+            want to access.
+
+            Backup and Recovery:
+            Database Management System automatically takes care of backup and recovery. The users don't need to backup
+            data periodically because this is taken care of by the DBMS. Moreover, it also restores the database after a
+            crash or system failure to its previous condition.
+
+            Data Consistency:
+            Data consistency is ensured in a database because there is no data redundancy. All data appears consistently
+            across the database and the data is same for all the users viewing the database. Moreover, any changes made
+            to the database are immediately reflected to all the users and there is no data inconsistency.</p>
+        <img src="images/IMG26.jpg" alt="Database Photo">
+        <p>A transaction is a single logical unit of work that accesses and possibly modifies the contents of a
+            database. Transactions access data using read and write operations.
+            In order to maintain consistency in a database, before and after the transaction, certain properties are
+            followed. These are called ACID properties. Atomicity:
+            By this, we mean that either the entire transaction takes place at once or doesn’t happen at all. There is
+            no midway i.e. transactions do not occur partially. Each transaction is considered as one unit and either
+            runs to completion or is not executed at all. It involves the following two operations.
+            —Abort: If a transaction aborts, changes made to the database are not visible.
+            —Commit: If a transaction commits, changes made are visible.
+            Atomicity is also known as the 'All or nothing rule'.
+
+
+            Consider the following transaction T consisting of T1 and T2: Transfer of 100 from account X to account Y.
+            If the transaction fails after completion of T1 but before completion of T2.( say, after write(X) but before
+            write(Y)), then the amount has been deducted from X but not added to Y. This results in an inconsistent
+            database state. Therefore, the transaction must be executed in its entirety in order to ensure the
+            correctness of the database state.
+
+            Consistency:
+            This means that integrity constraints must be maintained so that the database is consistent before and after
+            the transaction. It refers to the correctness of a database. Referring to the example above,
+            The total amount before and after the transaction must be maintained.
+            Total before T occurs = 500 + 200 = 700.
+            Total after T occurs = 400 + 300 = 700.
+            Therefore, the database is consistent. Inconsistency occurs in case T1 completes but T2 fails. As a result,
+            T is incomplete.
+
+            Isolation:
+            This property ensures that multiple transactions can occur concurrently without leading to the inconsistency
+            of the database state. Transactions occur independently without interference. Changes occurring in a
+            particular transaction will not be visible to any other transaction until that particular change in that
+            transaction is written to memory or has been committed. This property ensures that the execution of
+            transactions concurrently will result in a state that is equivalent to a state achieved these were executed
+            serially in some order.
+            Let X= 500, Y = 500.
+            Consider two transactions T and T”. Suppose T has been executed till Read (Y) and then T’’ starts. As a
+            result, interleaving of operations takes place due to which T’’ reads the correct value of X but the
+            incorrect value of Y and sum computed by
+            T'': (X+Y = 50, 000+500=50, 500)
+            is thus not consistent with the sum at end of the transaction:
+            T: (X+Y = 50, 000 + 450 = 50, 450).
+            This results in database inconsistency, due to a loss of 50 units. Hence, transactions must take place in
+            isolation and changes should be visible only after they have been made to the main memory.
+
+            Durability:
+            This property ensures that once the transaction has completed execution, the updates and modifications to
+            the database are stored in and written to disk and they persist even if a system failure occurs. These
+            updates now become permanent and are stored in non-volatile memory. The effects of the transaction, thus,
+            are never lost.</p>
+        <p>The ACID properties, in totality, provide a mechanism to ensure the correctness and consistency of a database
+            in a way such that each transaction is a group of operations that acts as a single unit, produces consistent
+            results, acts in isolation from other operations, and updates that it makes are durably stored.</p>
+        <p>Database:
+
+            A database is a named collection of tables. (see table). A database can also contain views, indexes,
+            sequences, data types, operators, and functions. Other relational database products use the term catalog.
+
+            Command:
+
+            A command is a string that you send to the server in hopes of having the server do something useful. Some
+            people use the word statement to mean command. The two words are very similar in meaning and, in practice,
+            are interchangeable.
+
+            Query:
+
+            A query is a type of command that retrieves data from the server.
+
+            Table (relation, file, class):
+
+            A table is a collection of rows. A table usually has a name, although some tables are temporary and exist
+            only to carry out a command. All the rows in a table have the same shape (in other words, every row in a
+            table contains the same set of columns). In other database systems, you may see the terms relation, file, or
+            even class?these are all equivalent to a table.
+
+            Column (field, attribute):
+
+            A column is the smallest unit of storage in a relational database. A column represents one piece of
+            information about an object. Every column has a name and a data type. Columns are grouped into rows, and
+            rows are grouped into tables.
+
+            Row (record, tuple):
+
+            A row is a collection of column values. Every row in a table has the same shape (in other words, every row
+            is composed of the same set of columns). If you are trying to model a real-world application, a row
+            represents a real-world object. For example, if you are running an auto dealership, you might have a
+            vehicles table. Each row in the vehicles table represents a car (or truck, or motorcycle, and so on). The
+            kinds of information that you store are the same for all vehicles (that is, every car has a color, a vehicle
+            ID, an engine, and so on).
+
+            View:
+
+            A view is an alternative way to present a table (or tables). You might think of a view as a "virtual" table.
+            A view is (usually) defined in terms of one or more tables. When you create a view, you are not storing more
+            data, you are instead creating a different way of looking at existing data. A view is a useful way to give a
+            name to a complex query that you may have to use repeatedly.</p>
+        <img src="images/IMG27.jpg" alt="Database Photo">
+        <p>An entity-relationship model (or ER model) describes interrelated things of interest in a specific domain of
+            knowledge. A basic ER model is composed of entity types (which classify the things of interest) and
+            specifies relationships that can exist between entities (instances of those entity types). In software
+            engineering, an ER model is commonly formed to represent things a business needs to remember in order to
+            perform business processes. Consequently, the ER model becomes an abstract data model, that defines a data
+            or information structure which can be implemented in a database, typically a relational database.
+
+            Entity–relationship modeling was developed for database and design by Peter Chen and published in a 1976
+            paper,[1] with variants of the idea existing previously, but today it is commonly used for teaching students
+            the basics of data base structure.[2] Some ER models show super and subtype entities connected by
+            generalization-specialization relationships,[3] and an ER model can be used also in the specification of
+            domain-specific ontologies.</p>
+        <p>Database Management System or DBMS essentially consists of a comprehensive set of application programs that
+            can be leveraged to access, manage and update the data, provided the data is interrelated and profoundly
+            persistent. Just like any management system, the goal of a DBMS is to provide an efficient and convenient
+            environment in which it becomes easy to retrieve and store the information into the database. It goes
+            without mentioning that databases are used to store and manage large amounts of information.
+
+            To achieve this, the following are the absolute must-haves:
+
+            Data Modeling − It is all about defining the structures for information storage.
+            Provision of Mechanisms − To manipulate processed data and modify file and system structures, it is
+            important to provide query processing mechanisms.
+            Crash Recovery and Security − To avoid any discrepancies and ensure that the data is secure, crash recovery
+            and security mechanisms are must.
+            Concurrency Control − If the system is shared by multiple users, concurrency control is the need of the
+            hour.
+            Dr Edgar F Codd
+            Dr E.F.Codd, also known to the world as the ‘Father of Database Management Systems’ had propounded 12 rules
+            which are in-fact 13 in number. The rules are numbered from zero to twelve. According to him, a DBMS is
+            fully relational if it abides by all his twelve rules. Till now, only few databases abide by all the eleven
+            rules. His twelve rules are fondly called ‘E.F.Codd’s Twelve Commandments’. His brilliant and seminal
+            research paper ‘A Relational Model of Data for Large Shared Data Banks’ in its entirety is a visual treat to
+            eyes.
+
+            Relational Database Management System
+            There is an unspoken rule in the jargon of Database Management Systems. As the databases that implement all
+            the E.F.Codd’s rules are scare, the unspoken rule has been gaining traction. If a management system or
+            software follows any of 5-6 rules proposed by E.F.Codd, it qualifies to be a Database Management System
+            (DBMS).
+            If a management system or software follows any of 7-9 rules proposed by E.F.Codd, it qualifies to be a
+            semi-Relational Database Management System (semi- RDBMS).
+            If a management system or software follows 9-12 rules proposed by E.F. Codd, it qualifies to be a complete
+            Relational Database Management System (RDBMS).</p>
+        <img src="images/IMG28.jpg" alt="Database Photo">
+        <p>Rule 0 − Foundation rule
+
+            Any relational database management system that is propounded to be RDBMS or advocated to be a RDBMS should
+            be able to manage the stored data in its entirety through its relational capabilities.
+
+            Rule 1 − Rule of Information
+
+            Relational Databases should store the data in the form of relations. Tables are relations in Relational
+            Database Management Systems. Be it any user defined data or meta-data, it is important to store the value as
+            an entity in the table cells.
+
+            Rule 2 − Rule of Guaranteed Access
+
+            The use of pointers to access data logically is strictly forbidden. Every data entity which is atomic in
+            nature should be accessed logically by using a right combination of the name of table, primary key
+            represented by a specific row value and column name represented by attribute value.
+
+            Rule 3 − Rule of Systematic Null Value Support
+
+            Null values are completely supported in relational databases. They should be uniformly considered as
+            ‘missing information’. Null values are independent of any data type. They should not be mistaken for blanks
+            or zeroes or empty strings. Null values can also be interpreted as ‘inapplicable data’ or ‘unknown
+            information.’
+
+            Rule 4 − Rule of Active and online relational Catalog
+
+            In the Database Management Systems lexicon, ‘metadata’ is the data about the database or the data about the
+            data. The active online catalog that stores the metadata is called ‘Data dictionary’. The so called data
+            dictionary is accessible only by authored users who have the required privileges and the query languages
+            used for accessing the database should be used for accessing the data of data dictionary.
+
+            Rule 5 − Rule of Comprehensive Data Sub-language
+
+            A single robust language should be able to define integrity constraints, views, data manipulations,
+            transactions and authorizations. If the database allows access to the aforementioned ones, it is violating
+            this rule.
+
+            Rule 6 − Rule of Updating Views
+
+            Views should reflect the updates of their respective base tables and vice versa. A view is a logical table
+            which shows restricted data. Views generally make the data readable but not modifiable. Views help in data
+            abstraction.
+
+            Rule 7 − Rule of Set level insertion, update and deletion
+
+            A single operation should be sufficient to retrieve, insert, update and delete the data.
+
+            Rule 8 − Rule of Physical Data Independence
+
+            Batch and end user operations are logically separated from physical storage and respective access methods.
+
+            Rule 9 − Rule of Logical Data Independence
+
+            Batch and end users can change the database schema without having to recreate it or recreate the
+            applications built upon it.
+
+            Rule 10 − Rule of Integrity Independence
+
+            Integrity constraints should be available and stored as metadata in data dictionary and not in the
+            application programs.
+
+            Rule 11 − Rule of Distribution Independence
+
+            The Data Manipulation Language of the relational system should not be concerned about the physical data
+            storage and no alterations should be required if the physical data is centralized or distributed.
+
+            Rule 12 − Rule of Non Subversion
+
+            Any row should obey the security and integrity constraints imposed. No special privileges are applicable.
+
+            Almost all full scale DBMSs are RDMSs. Oracle implements 11+ rules and so does Sybase. SQL Server also
+            implements 11+ rules while FoxPro implements 7+ rules.</p>
+        <img src="images/IMG29.jpg" alt="Database Photo">
+        <p>Normalization is a process of organizing the data in database to avoid data redundancy, insertion anomaly,
+            update anomaly & deletion anomaly. Let’s discuss about anomalies first then we will discuss normal forms
+            with examples.
+
+            Anomalies in DBMS
+            There are three types of anomalies that occur when the database is not normalized. These are: Insertion,
+            update and deletion anomaly. Let’s take an example to understand this. Here are the most commonly used
+            normal forms:
+
+            First normal form(1NF)
+            Second normal form(2NF)
+            Third normal form(3NF)
+            Boyce & Codd normal form (BCNF)
+
+            First normal form (1NF):
+            A relation is said to be in 1NF (first normal form), if it doesn’t contain any multi-valued attribute. In
+            other words you can say that a relation is in 1NF if each attribute contains only atomic(single) value only.
+
+            As per the rule of first normal form, an attribute (column) of a table cannot hold multiple values. It
+            should hold only atomic values.
+
+            Second normal form (2NF):
+            A table is said to be in 2NF if both the following conditions hold:
+
+            Table is in 1NF (First normal form).
+            No non-prime attribute is dependent on the proper subset of any candidate key of table.
+            An attribute that is not part of any candidate key is known as non-prime attribute.
+
+            Third Normal form (3NF):
+            A table design is said to be in 3NF if both the following conditions hold:
+
+            Table must be in 2NF.
+            Transitive functional dependency of non-prime attribute on any super key should be removed.
+            An attribute that is not part of any candidate key is known as non-prime attribute.
+
+            In other words 3NF can be explained like this: A table is in 3NF if it is in 2NF and for each functional
+            dependency X-> Y at least one of the following conditions hold:
+
+            X is a super key of table
+            Y is a prime attribute of table
+            An attribute that is a part of one of the candidate keys is known as prime attribute.</p>
+        <img src="images/IMG31.png" alt="Database Photo">
+        <p>Normalization in DBMS: 1NF, 2NF, 3NF and BCNF in Database
+            BY CHAITANYA SINGH | FILED UNDER: DBMS
+
+            Normalization is a process of organizing the data in database to avoid data redundancy, insertion anomaly,
+            update anomaly & deletion anomaly. Let’s discuss about anomalies first then we will discuss normal forms
+            with examples.
+
+            Anomalies in DBMS
+            There are three types of anomalies that occur when the database is not normalized. These are: Insertion,
+            update and deletion anomaly. Let’s take an example to understand this.
+
+            Example: A manufacturing company stores the employee details in a table Employee that has four attributes:
+            Emp_Id for storing employee’s id, Emp_Name for storing employee’s name, Emp_Address for storing employee’s
+            address and Emp_Dept for storing the department details in which the employee works. At some point of time
+            the table looks like this:
+
+            Emp_Id Emp_Name Emp_Address Emp_Dept
+            101 Rick Delhi D001
+            101 Rick Delhi D002
+            123 Maggie Agra D890
+            166 Glenn Chennai D900
+            166 Glenn Chennai D004
+            This table is not normalized. We will see the problems that we face when a table in database is not
+            normalized.
+
+            Update anomaly: In the above table we have two rows for employee Rick as he belongs to two departments of
+            the company. If we want to update the address of Rick then we have to update the same in two rows or the
+            data will become inconsistent. If somehow, the correct address gets updated in one department but not in
+            other then as per the database, Rick would be having two different addresses, which is not correct and would
+            lead to inconsistent data.
+
+            Insert anomaly: Suppose a new employee joins the company, who is under training and currently not assigned
+            to any department then we would not be able to insert the data into the table if Emp_Dept field doesn’t
+            allow null.
+
+            Delete anomaly: Let’s say in future, company closes the department D890 then deleting the rows that are
+            having Emp_Dept as D890 would also delete the information of employee Maggie since she is assigned only to
+            this department.
+
+            To overcome these anomalies we need to normalize the data. In the next section we will discuss about
+            normalization.
+
+            Normalization
+            Here are the most commonly used normal forms:
+
+            First normal form(1NF)
+            Second normal form(2NF)
+            Third normal form(3NF)
+            Boyce & Codd normal form (BCNF)
+            First normal form (1NF)
+            A relation is said to be in 1NF (first normal form), if it doesn’t contain any multi-valued attribute. In
+            other words you can say that a relation is in 1NF if each attribute contains only atomic(single) value only.
+
+            As per the rule of first normal form, an attribute (column) of a table cannot hold multiple values. It
+            should hold only atomic values.
+
+            Example: Let’s say a company wants to store the names and contact details of its employees. It creates a
+            table in the database that looks like this:
+
+            Emp_Id Emp_Name Emp_Address Emp_Mobile
+            101 Herschel New Delhi 8912312390
+            102 Jon Kanpur 8812121212 ,
+            9900012222
+            103 Ron Chennai 7778881212
+            104 Lester Bangalore 9990000123,
+            8123450987
+            Two employees (Jon & Lester) have two mobile numbers that caused the Emp_Mobile field to have multiple
+            values for these two employees.
+
+            This table is not in 1NF as the rule says “each attribute of a table must have atomic (single) values”, the
+            Emp_Mobile values for employees Jon & Lester violates that rule.
+
+            To make the table complies with 1NF we need to create separate rows for the each mobile number in such a way
+            so that none of the attributes contains multiple values.
+
+            Emp_Id Emp_Name Emp_Address Emp_Mobile
+            101 Herschel New Delhi 8912312390
+            102 Jon Kanpur 8812121212
+            102 Jon Kanpur 9900012222
+            103 Ron Chennai 7778881212
+            104 Lester Bangalore 9990000123
+            104 Lester Bangalore 8123450987
+            To learn more about 1NF refer this article: 1NF
+
+            Second normal form (2NF)
+            A table is said to be in 2NF if both the following conditions hold:
+
+            Table is in 1NF (First normal form)
+            No non-prime attribute is dependent on the proper subset of any candidate key of table.
+            An attribute that is not part of any candidate key is known as non-prime attribute.
+
+            Example: Let’s say a school wants to store the data of teachers and the subjects they teach. They create a
+            table Teacher that looks like this: Since a teacher can teach more than one subjects, the table can have
+            multiple rows for a same teacher.
+
+            Teacher_Id Subject Teacher_Age
+            111 Maths 38
+            111 Physics 38
+            222 Biology 38
+            333 Physics 40
+            333 Chemistry 40
+            Candidate Keys: {Teacher_Id, Subject}
+            Non prime attribute: Teacher_Age
+
+            This table is in 1 NF because each attribute has atomic values. However, it is not in 2NF because non prime
+            attribute Teacher_Age is dependent on Teacher_Id alone which is a proper subset of candidate key. This
+            violates the rule for 2NF as the rule says “no non-prime attribute is dependent on the proper subset of any
+            candidate key of the table”.
+
+            To make the table complies with 2NF we can disintegrate it in two tables like this:
+            Teacher_Details table:
+
+            Teacher_Id Teacher_Age
+            111 38
+            222 38
+            333 40
+            Teacher_Subject table:
+
+            Teacher_Id Subject
+            111 Maths
+            111 Physics
+            222 Biology
+            333 Physics
+            333 Chemistry
+            Now the tables are in Second normal form (2NF). To learn more about 2NF refer this guide: 2NF
+
+            Third Normal form (3NF)
+            A table design is said to be in 3NF if both the following conditions hold:
+
+            Table must be in 2NF
+            Transitive functional dependency of non-prime attribute on any super key should be removed.
+            An attribute that is not part of any candidate key is known as non-prime attribute.
+
+            In other words 3NF can be explained like this: A table is in 3NF if it is in 2NF and for each functional
+            dependency X-> Y at least one of the following conditions hold:
+
+            X is a super key of table
+            Y is a prime attribute of table
+            An attribute that is a part of one of the candidate keys is known as prime attribute.
+
+            Example: Let’s say a company wants to store the complete address of each employee, they create a table named
+            Employee_Details that looks like this:
+
+            Emp_Id Emp_Name Emp_Zip Emp_State Emp_City Emp_District
+            1001 John 282005 UP Agra Dayal Bagh
+            1002 Ajeet 222008 TN Chennai M-City
+            1006 Lora 282007 TN Chennai Urrapakkam
+            1101 Lilly 292008 UK Pauri Bhagwan
+            1201 Steve 222999 MP Gwalior Ratan
+            Super keys: {Emp_Id}, {Emp_Id, Emp_Name}, {Emp_Id, Emp_Name, Emp_Zip}…so on
+            Candidate Keys: {Emp_Id}
+            Non-prime attributes: all attributes except Emp_Id are non-prime as they are not part of any candidate keys.
+
+            Here, Emp_State, Emp_City & Emp_District dependent on Emp_Zip. Further Emp_zip is dependent on Emp_Id that
+            makes non-prime attributes (Emp_State, Emp_City & Emp_District) transitively dependent on super key
+            (Emp_Id). This violates the rule of 3NF.
+
+            To make this table complies with 3NF we have to disintegrate the table into two tables to remove the
+            transitive dependency:
+
+            Employee Table:
+
+            Emp_Id Emp_Name Emp_Zip
+            1001 John 282005
+            1002 Ajeet 222008
+            1006 Lora 282007
+            1101 Lilly 292008
+            1201 Steve 222999
+            Employee_Zip table:
+
+            Emp_Zip Emp_State Emp_City Emp_District
+            282005 UP Agra Dayal Bagh
+            222008 TN Chennai M-City
+            282007 TN Chennai Urrapakkam
+            292008 UK Pauri Bhagwan
+            222999 MP Gwalior Ratan
+            Boyce Codd normal form (BCNF)
+            It is an advance version of 3NF that’s why it is also referred as 3.5NF. BCNF is stricter than 3NF. A table
+            complies with BCNF if it is in 3NF and for every functional dependency X->Y, X should be the super key of
+            the table.</p>
+        <img src="images/IMG30.png" alt="Database Photo">
+        <p>Type of SQL statements are divided into five different categories: Data definition language (DDL), Data
+            manipulation language (DML), Data Control Language (DCL), Transaction Control Statement (TCS), Session
+            Control Statements (SCS).</p>
+        <p>The design of a DBMS depends on its architecture. It can be centralized or decentralized or hierarchical. The
+            architecture of a DBMS can be seen as either single tier or multi-tier. An n-tier architecture divides the
+            whole system into related but independent n modules, which can be independently modified, altered, changed,
+            or replaced.
+
+            In 1-tier architecture, the DBMS is the only entity where the user directly sits on the DBMS and uses it.
+            Any changes done here will directly be done on the DBMS itself. It does not provide handy tools for
+            end-users. Database designers and programmers normally prefer to use single-tier architecture.
+
+            If the architecture of DBMS is 2-tier, then it must have an application through which the DBMS can be
+            accessed. Programmers use 2-tier architecture where they access the DBMS by means of an application. Here
+            the application tier is entirely independent of the database in terms of operation, design, and programming.
+
+            3-tier Architecture
+            A 3-tier architecture separates its tiers from each other based on the complexity of the users and how they
+            use the data present in the database. It is the most widely used architecture to design a DBMS. Database
+            (Data) Tier − At this tier, the database resides along with its query processing languages. We also have the
+            relations that define the data and their constraints at this level.
+
+            Application (Middle) Tier − At this tier reside the application server and the programs that access the
+            database. For a user, this application tier presents an abstracted view of the database. End-users are
+            unaware of any existence of the database beyond the application. At the other end, the database tier is not
+            aware of any other user beyond the application tier. Hence, the application layer sits in the middle and
+            acts as a mediator between the end-user and the database.
+
+            User (Presentation) Tier − End-users operate on this tier and they know nothing about any existence of the
+            database beyond this layer. At this layer, multiple views of the database can be provided by the
+            application. All views are generated by applications that reside in the application tier.
+
+            Multiple-tier database architecture is highly modifiable, as almost all its components are independent and
+            can be changed independently.</p>
+        <p>SQL Server is a relational database management system (RDBMS) developed by Microsoft. It is primarily
+            designed and developed to compete with MySQL and Oracle database. SQL Server supports ANSI SQL, which is the
+            standard SQL (Structured Query Language) language. However, SQL Server comes with its own implementation of
+            the SQL language, T-SQL (Transact-SQL).
+
+            T-SQL is a Microsoft propriety Language known as Transact-SQL. It provides further capabilities of declaring
+            variable, exception handling, stored procedure, etc.
+
+            SQL Server Management Studio (SSMS) is the main interface tool for SQL Server, and it supports both 32-bit
+            and 64-bit environments.</p>
+        <p>Oracle Database allows you to quickly and safely store and retrieve data. Here are the integration benefits
+            of the Oracle Database:
+
+            Oracle Database is cross-platform. It can run on various hardware across operating systems including Windows
+            Server, Unix, and various distributions of GNU/Linux.
+            Oracle Database has its networking stack that allows application from a different platform to communicate
+            with the Oracle Database smoothly. For example, applications running on Windows can connect to the Oracle
+            Database running on Unix.
+            ACID-compliant – Oracle is ACID-compliant Database that helps maintain data integrity and reliability.
+            Commitment to open technologies – Oracle is one of the first Database that supported GNU/Linux in the late
+            1990s before GNU/Linux become a commerce product. It has been supporting this open platform since then.
+            Oracle Database has several structural features that make it popular:
+
+            Logical data structure – Oracle uses the logical data structure to store data so that you can interact with
+            the database without knowing where the data is stored physically.
+            Partitioning – is a high-performance feature that allows you to divide a large table into different pieces
+            and store each piece across storage devices.
+            Memory caching – the memory caching architecture allows you to scale up a very large database that still can
+            perform at a high speed.
+            Data Dictionary is a set of internal tables and views that support administer Oracle Database more
+            effectively.
+            Backup and recovery – ensure the integrity of the data in case of system failure. Oracle includes a powerful
+            tool called Recovery Manager (RMAN) – allows DBA to perform cold, hot, and incremental database backups and
+            point-in-time recoveries.
+            Clustering – Oracle Real Application Clusters (RAC) – Oracle enables high availability that enables the
+            system is up and running without interruption of services in case one or more server in a cluster fails.</p>
+        <p>MySQL is a fast, easy-to-use RDBMS being used for many small and big businesses. MySQL is developed, marketed
+            and supported by MySQL AB, which is a Swedish company. MySQL is becoming so popular because of many good
+            reasons −
+
+            MySQL is released under an open-source license. So you have nothing to pay to use it.
+
+            MySQL is a very powerful program in its own right. It handles a large subset of the functionality of the
+            most expensive and powerful database packages.
+
+            MySQL uses a standard form of the well-known SQL data language.
+
+            MySQL works on many operating systems and with many languages including PHP, PERL, C, C++, JAVA, etc.
+
+            MySQL works very quickly and works well even with large data sets.
+
+            MySQL is very friendly to PHP, the most appreciated language for web development.
+
+            MySQL supports large databases, up to 50 million rows or more in a table. The default file size limit for a
+            table is 4GB, but you can increase this (if your operating system can handle it) to a theoretical limit of 8
+            million terabytes (TB).
+
+            MySQL is customizable. The open-source GPL license allows programmers to modify the MySQL software to fit
+            their own specific environments.</p>
+        <h2 id="primary">Database Quiz</h2>
+        <p>(Note:- Click on the triangle icon located at the start of the questions to verify your answer!)</p>
+        <details>
+            <summary> The set of processed data is called: <br> (a) Database <br> (b) Data <br>
+                (c) Information <br> (d) Datum </summary>
+            Answer - (c) Information
+        </details>
+        <br>
+        <details>
+            <summary> The DBMS acts as an interface between what two components of an enterprise-class database system:
+                <br> (a) Database application and the database <br> (b) Data and the database <br> (c) The user and the
+                database application <br> (d) Database application and SQL
+            </summary>
+            Answer - (a) Database application and the database
+        </details>
+        <br>
+        <details>
+            <summary> The following are components of a database except: <br> (a) User data <br>
+                (b) Meta data <br> (c) Reports <br> (d) Indexes </summary>
+            Answer - (c) Reports
+        </details>
+        <br>
+        <details>
+            <summary> The following are functions of a DBMS except: <br> (a) creating and processing forms <br>
+                (b) creating databases <br> (c) processing data <br> (d) administrating databases </summary>
+            Answer - (a) creating and processing forms
+        </details>
+        <br>
+        <details>
+            <summary> The primary key is selected from the: <br> (a) composite keys <br> (b) determinants <br> (c)
+                foreign keys <br> (d) candidate keys </summary>
+            Answer - (d) candidate keys
+        </details>
+        <br>
+    </div>
+</body>
+
+</html>

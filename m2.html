@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 2 - Windows</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Alata&family=Bangers&family=Bebas+Neue&family=Concert+One&family=Fira+Sans+Extra+Condensed&family=Kalam:wght@700&family=Oswald:wght@600&family=Sofia+Sans+Extra+Condensed&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            color: white;
+            background-color: rgb(29, 29, 29);
+            /* border: 2px solid white; */
+            /* font-family: 'Acme', sans-serif; */
+            /* font-family: 'Alata', sans-serif; */
+            /* font-family: 'Bangers', cursive; */
+            /* font-family: 'Bebas Neue', cursive; */
+            /* font-family: 'Concert One', cursive; */
+            /* font-family: 'Fira Sans Extra Condensed', sans-serif; */
+            /* font-family: 'Kalam', cursive; */
+            font-family: 'Oswald', sans-serif;
+            /* font-family: 'Sofia Sans Extra Condensed', sans-serif; */
+        }
+
+        body img {
+            height: 250px;
+            display: block;
+            margin: auto;
+            border: 2px solid white;
+        }
+
+        #primary {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .container {
+            /* border: 2px solid red; */
+            height: 100%;
+            width: 100%;
+            margin: 8px;
+        }
+
+        .container p {
+            font-size: 20px;
+            /* border: 2px solid white; */
+            /* font-family: 'Acme', sans-serif; */
+            /* font-family: 'Alata', sans-serif; */
+            /* font-family: 'Bangers', cursive; */
+            /* font-family: 'Bebas Neue', cursive; */
+            /* font-family: 'Concert One', cursive; */
+            /* font-family: 'Fira Sans Extra Condensed', sans-serif; */
+            font-family: 'Kalam', cursive;
+            /* font-family: 'Oswald', sans-serif; */
+            /* font-family: 'Sofia Sans Extra Condensed', sans-serif; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="primary">Module 2 - Windows</h1>
+    <img src="images/IMG10.jpg" alt="Windows Photo">
+    <div class="container">
+        <p>An Operating System is the interface between the computer hardware and the end-user. Processing of data,
+            running applications, file management and handling the memory is all managed by the computer OS. Windows,
+            Mac, Android etc. are examples of Operating systems which are generally used nowadays.</p>
+        <p>A server is an application or device that performs service for connected clients as part of client server
+            architecture. It can also be a computer system that has been designated for running a specific server
+            application . A server can also serve applications to users on an intranet.
+
+            A workstation is a personal computer that is used for high end applications such as graphic design, video
+            editing, CAD, 3-D design, or other CPU and RAM intensive programs. A workstation typically has a top of the
+            line, fast processor, multiple hard drives, and a lot of RAM memory. A workstation may also have special
+            audio, video, or processing cards for special editing work. A workstation is marketed by computer
+            manufacturers to professional users, while the server is more of a utility device.
+
+            Both form part of the networking architecture and differ in their functions and use.</p>
+        <p>Windows Vista, Windows Server 2003, Windows XP, Windows 2000 and Windows NT are all part of the Windows NT
+            family ( NT-based) of Microsoft operating systems. They are all preemptive, reentrant operating systems,
+            which have been designed to work with either uniprocessor- or symmetrical multi processor (SMP)-based Intel
+            x86 computers. To process input/output (I/O) requests it uses packet-driven I/O which utilises I/O request
+            packets (IRPs) and asynchronous I/O. Starting with Windows XP, Microsoft began building in 64-bit support
+            into their operating systems — before this their operating systems were based on a 32-bit model. The
+            architecture of Windows NT is highly modular, and consists of two main layers: a user mode and a kernel
+            mode. Programs and subsystems in user mode are limited in terms of what system resources they have access
+            to, while the kernel mode has unrestricted access to the system memory and external devices. The kernels of
+            the operating systems in this line are all known as hybrid kernels - although it is worth noting that this
+            term is disputed, with the claim that the kernel is essentially a monolithic kernel that is structured
+            somewhat like a microkernel. The architecture is comprised of a hybrid kernel, Hardware Abstraction Layer
+            (HAL), drivers, and Executive, which all exist in kernel mode . The higher-level services are implemented by
+            the executive.</p>
+        <p>User mode in the Windows NT line is made of subsystems capable of passing I/O requests to the appropriate
+            kernel mode software drivers by using the I/O manager. Two subsystems make up the user mode layer of Windows
+            2000: the Environment subsystem (runs applications written for many different types of operating systems),
+            and the Integral subsystem (operates system specific functions on behalf of the environment subsystem).
+            Kernel mode in Windows 2000 has full access to the hardware and system resources of the computer. The kernel
+            mode stops user mode services and applications from accessing critical areas of the operating system that
+            they should not have access to.
+
+            The Executive interfaces with all the user mode subsystems. It deals with I/O, object management, security
+            and process management. The kernel sits between the Hardware Abstraction Layer and the Executive to provide
+            multiprocessor synchronization, thread and interrupt scheduling and dispatching, and trap handling and
+            exception dispatching. The kernel is also responsible for initialising device drivers at bootup. Kernel mode
+            drivers exist in three levels: highest level drivers, intermediate drivers and low level drivers. Windows
+            Driver Model (WDM) exists in the intermediate layer and was mainly designed to be binary and source
+            compatible between Windows 98 and Windows 2000. The lowest level drivers are either legacy Windows NT device
+            drivers that control a device directly or can be a PnP hardware bus.</p>
+        <p>User mode -
+            The user mode is made up of subsystems which can pass I/O requests to the appropriate kernel mode drivers
+            via the I/O manager (which exists in kernel mode). Two subsystems make up the user mode layer of Windows
+            2000: the Environment subsystem and the Integral subsystem.
+
+            The environment subsystem was designed to run applications written for many different types of operating
+            systems. None of the environment subsystems can directly access hardware, and must request access to memory
+            resources through the Virtual Memory Manager that runs in kernel mode. Also, applications run at a lower
+            priority than kernel mode processes. Currently, there are three main environment subsystems: the Win32
+            subsystem, an OS/2 subsystem and a POSIX subsystem.</p>
+        <p>The Win32 environment subsystem can run 32-bit Windows applications. It contains the console as well as text
+            window support, shutdown and hard-error handling for all other environment subsystems. It also supports
+            Virtual DOS Machines (VDMs), which allow MS-DOS and 16-bit Windows 3.x ( Win16) applications to run on
+            Windows. There is a specific MS-DOS VDM which runs in its own address space and which emulates an Intel
+            80486 running MS-DOS 5. Win16 programs, however, run in a Win16 VDM. Each program, by default, runs in the
+            same process, thus using the same address space, and the Win16 VDM gives each program its own thread to run
+            on. However, Windows 2000 does allow users to run a Win16 program in a separate Win16 VDM, which allows the
+            program to be preemptively multitasked as Windows 2000 will pre-empt the whole VDM process, which only
+            contains one running application. The OS/2 environment subsystem supports 16-bit character-based OS/2
+            applications and emulates OS/2 1.x, but not 32-bit or graphical OS/2 applications as used with OS/2 2.x or
+            later. The POSIX environment subsystem supports applications that are strictly written to either the POSIX.1
+            standard or the related ISO/ IEC standards.</p>
+        <p>The integral subsystem looks after operating system specific functions on behalf of the environment
+            subsystem. It consists of a security subsystem, a workstation service and a server service. The security
+            subsystem deals with security tokens, grants or denies access to user accounts based on resource
+            permissions, handles logon requests and initiates logon authentication, and determines which system
+            resources need to be audited by Windows 2000. It also looks after Active Directory. The workstation service
+            is an API to the network redirector, which provides the computer access to the network. The server service
+            is an API that allows the computer to provide network services.</p>
+        <img src="images/IMG11.jpg" alt="Windows Photo">
+        <p>Kernel mode -
+            Windows 2000 kernel mode has full access to the hardware and system resources of the computer and runs code
+            in a protected memory area. It controls access to scheduling, thread prioritisation, memory management and
+            the interaction with hardware. The kernel mode stops user mode services and applications from accessing
+            critical areas of the operating system that they should not have access to as user mode processes ask the
+            kernel mode to perform such operations on its behalf.
+
+            Kernel mode consists of executive services, which is itself made up on many modules that do specific tasks,
+            kernel drivers, a kernel and a Hardware Abstraction Layer, or HAL.</p>
+        <p>Executive:
+            The Executive interfaces with all the user mode subsystems. It deals with I/O, object management, security
+            and process management. It contains various components, including the I/O Manager, the Security Reference
+            Monitor, the Object Manager, the IPC Manager, the Virtual Memory Manager (VMM), a PnP Manager and Power
+            Manager, as well as a Window Manager which works in conjunction with the Windows Graphics Device Interface
+            (GDI). Each of these components exports a kernel-only support routine allows other components to communicate
+            with one another. Grouped together, the components can be called executive services. No executive component
+            has access to the internal routines of any other executive component.
+
+            The object manager is a special executive subsystem that all other executive subsystems must pass through to
+            gain access to Windows 2000 resources — essentially making it a resource management infrastructure service.
+            The object manager is used to reduce the duplication of object resource management functionality in other
+            executive subsystems, which could potentially lead to bugs and make development of Windows 2000 harder . To
+            the object manager, each resource is an object, whether that resource is a physical resource (such as a file
+            system or peripheral) or a logical resource (such as a file). Each object has a structure or object type
+            that the object manager must know about. When another executive subsystem requests the creation of an
+            object, they send that request to the object manager which creates an empty object structure which the
+            requesting executive subsystem then fills in . Object types define the object procedures and any data
+            specific to the object. In this way, the object manager allows Windows 2000 to be an object oriented
+            operating system, as object types can be thought of as classes that define objects.
+
+            Each instance of an object that is created stores its name, parameters that are passed to the object
+            creation function, security attributes and a pointer to its object type. The object also contains an object
+            close procedure and a reference count to tell the object manager how many other objects in the system
+            reference that object and thereby determines whether the object can be destroyed when a close request is
+            sent to it . Every object exists in a hierarchical object namespace.</p>
+        <p>Further executive subsystems are the following:
+
+            I/O Manager: allows devices to communicate with user-mode subsystems. It translates user-mode read and write
+            commands in read or write IRPs which it passes to device drivers. It accepts file system I/O requests and
+            translates them into device specific calls, and can incorporate low-level device drivers that directly
+            manipulate hardware to either read input or write output. It also includes a cache manager to improve disk
+            performance by caching read requests and write to the disk in the background
+            Security Reference Monitor (SRM): the primary authority for enforcing the security rules of the security
+            integral subsystem . It determines whether an object or resource can be accessed, via the use of access
+            control lists (ACLs), which are themselves made up of access control entries (ACEs). ACEs contain a security
+            identifier (SID) and a list of operations that the ACE gives a select group of trustees — a user account,
+            group account, or logon session — permission (allow, deny, or audit) to that resource.
+            IPC Manager: short for Interprocess Communication Manager, this manages the communication between clients
+            (the environment subsystem) and servers (components of the Executive). It can use two facilities: the Local
+            Procedure Call (LPC) facility (clients and servers on the one computer) and the Remote Procedure Call (RPC)
+            facility where clients and servers are situated on different computers. Microsoft has had significant
+            security issues with the RPC facility .
+            Virtual Memory Manager: manages virtual memory, allowing Windows 2000 to use the hard disk as a primary
+            storage device (although strictly speaking it is secondary storage). It controls the paging of memory in and
+            out of physical memory to disk storage.
+            Process Manager: handles process and thread creation and termination
+            PnP Manager: handles Plug and Play and supports device detection and installation at boot time. It also has
+            the responsibility to stop and start devices on demand — sometimes this happens when a bus gains a new
+            device and needs to have a device driver loaded to support that device. Both FireWire and USB are
+            hot-swappable and require the services of the PnP Manager to load, stop and start devices. The PnP manager
+            interfaces with the HAL, the rest of the executive (as necessary) and with device drivers.
+            Power Manager: the power manager deals with power events and generates power IRPs. It coordinates these
+            power events when several devices send a request to be turned off it determines the best way of doing this.
+            The display system has been moved from user mode into the kernel mode as a device driver contained in the
+            file Win32k.sys. There are two components in this device driver — the Window Manager and the GDI:
+            Window Manager: responsible for drawing windows and menus. It controls the way that output is painted to the
+            screen and handles input events (such as from the keyboard and mouse), then passes messages to the
+            applications that need to receive this input
+            GDI: the Graphics Device Interface is responsible for tasks such as drawing lines and curves, rendering
+            fonts and handling palettes. Windows 2000 introduced native alpha blending into the GDI.
+        </p>
+        <p>Kernel & kernel-mode drivers:
+            The kernel sits between the HAL and the Executive and provides multiprocessor synchronization, thread and
+            interrupt scheduling and dispatching, and trap handling and exception dispatching. The kernel often
+            interfaces with the process manager. The kernel is also responsible for initialising device drivers at
+            bootup that are necessary to get the operating system up and running.
+
+            Windows 2000 uses kernel-mode device drivers to enable it to interact with hardware devices. Each of the
+            drivers has well defined system routines and internal routines that it exports to the rest of the operating
+            system. All devices are seen by user mode code as a file object in the I/O manager, though to the I/O
+            manager itself the devices are seen as device objects, which it defines as either file, device or driver
+            objects. Kernel mode drivers exist in three levels: highest level drivers, intermediate drivers and low
+            level drivers. The highest level drivers, such as file system drivers for FAT and NTFS, rely on intermediate
+            drivers. Intermediate drivers consist of function drivers — or main driver for a device — that are
+            optionally sandwiched between lower and higher level filter drivers. The function driver then relies on a
+            bus driver — or a driver that services a bus controller, adapter, or bridge — which can have an optional bus
+            filter driver that sits between itself and the function driver. Intermediate drivers rely on the lowest
+            level drivers to function. The Windows Driver Model (WDM) exists in the intermediate layer. The lowest level
+            drivers are either legacy Windows NT device drivers that control a device directly or can be a PnP hardware
+            bus. These lower level drivers directly control hardware and do not rely on any other drivers.</p>
+        <img src="images/IMG12.jpg" alt="Windows Photo">
+        <p>Hardware abstraction layer -
+            The Windows 2000 Hardware Abstraction Layer, or HAL, is a layer between the physical hardware of the
+            computer and the rest of the operating system. It was designed to hide differences in hardware and therefore
+            provide a consistent platform on which applications may run. The HAL includes hardware specific code that
+            controls I/O interfaces, interrupt controllers and multiple processors.
+
+            Windows 2000 was designed to support the 64-bit DEC Alpha. After Compaq announced they would discontinue
+            support of the processor, Microsoft stopped releasing tests build of Windows 2000 for AXP to the public,
+            stopping with beta 3. Development of Windows on the Alpha continued internally in order to continue to have
+            a 64-bit architecture development model ready until the wider availability of the Intel Itanium IA-64
+            architecture. The HAL now only supports hardware that is compatible with the Intel x86 architecture.</p>
+        <p>Windows Architecture - The architecture of Windows , a line of produced and sold by Microsoft, is a layered
+            design. Layered design consist of two main components user mode and kernel mode. Starting with Windows 2000,
+            Microsoft began making 64-bit versions of Windows available; before this, these operating systems only
+            existed in 32-bit versions. This structure is a modular structure, composed of several simple modules. These
+            modules are:
+            3.Hardware Abstraction layer , Kernel/microkernel , Executive Services , Environment Subsystem , Integral
+            subsystem</p>
+        <p>Regardless of the computer or operating system, standard (“IBM-compatible”) desktop PCs and laptops all power
+            on and start up using one of two ways: the traditional BIOS-MBR method and the newer UEFI-GPT method, used
+            by the latest versions of Windows, Linux, and Mac OS X on newer PCs, laptops, and tablets. This article
+            summarizes the process by which traditional BIOS PCs load an operating system, covering the basics and
+            details of the BIOS, MBR, and bootsector.</p>
+        <img src="images/IMG13.jpg" alt="Windows Photo">
+        <p>The BIOS is where hardware meets software for the first time, and where all the boot magic begins. The BIOS
+            code is baked into the motherboard of your PC, usually stored on what is called an EEPROM 1 and is
+            considerably hardware-specific. The BIOS is the lowest level of software that interfaces with the hardware
+            as a whole,2 and is the interface by means of which the bootloader and operating system kernel can
+            communicate with and control the hardware. Through standardized calls to the BIOS (“interrupts” in computer
+            parlance), the operating system can trigger the BIOS to read and write to the disk and interface with other
+            hardware components.</p>
+        <p>When your PC is first powered up, a lot happens. Electrical components of the PC are initially responsible
+            for bringing your computer to life, as debouncing circuits take your push of the power button and trigger a
+            switch that activates the power supply and directs current from the PSU to the motherboard and, mainly
+            through it, to all the various components of your PC. As each individual component receives life-giving
+            electricity, it is powered up and brought online to its initial state. The startup routines and overall
+            functionality of the simpler components like the RAM and PSU is hardwired into them as a series of logic
+            circuits (AND/NAND and OR/NOR gates), while more complicated parts such as the video card have their own
+            microcontrollers that act as mini-CPUs, controlling the hardware and interfacing with the rest of your PC to
+            delegate and oversee the work.</p>
+        <p>Presently, the computer market offers a huge variety of opportunities for storing information in the digital
+            form. Existing storage devices include internal and external hard drives, memory cards of photo/video
+            cameras, USB flash drives, RAID sets along with other complex storages. Pieces of data are kept on them in
+            the form of files, like documents, pictures, databases, email messages, etc. that have to be efficiently
+            organized on the disk and easily retrieved when needed.</p>
+        <p>Any computer file is stored on a storage medium with a given capacity. In actual fact, each storage is linear
+            space for reading or both reading and writing digital information. Each byte of information on it has its
+            offset from the storage start known as an address and is referenced by this address. A storage can be
+            presented as a grid with a set of numbered cells (each cell is a single byte). Any item saved to the storage
+            gets its own cells.</p>
+        <p>The registry or Windows registry is a database of information, settings, options, and other values for
+            software and hardware installed on all versions of Microsoft Windows operating systems. When a program is
+            installed, a new subkey is created in the registry. This subkey contains settings specific to that program,
+            such as its location, version, and primary executable.</p>
+        <img src="images/IMG14.png" alt="Windows Photo">
+        <p>In computing, a device driver is a computer program that operates or controls a particular type of device
+            that is attached to a computer or automaton. A driver provides a software interface to hardware devices,
+            enabling operating systems and other computer programs to access hardware functions without needing to know
+            precise details about the hardware being used.
+
+            A driver communicates with the device through the computer bus or communications subsystem to which the
+            hardware connects. When a calling program invokes a routine in the driver, the driver issues commands to the
+            device (drives it). Once the device sends data back to the driver, the driver may invoke routines in the
+            original calling program.
+
+            Drivers are hardware dependent and operating-system-specific. They usually provide the interrupt handling
+            required for any necessary asynchronous time-dependent hardware interface. The main purpose of device
+            drivers is to provide abstraction by acting as a translator between a hardware device and the applications
+            or operating systems that use it.</p>
+        <p>When a computer is in a Sleep state, it is not performing any task and may appear to be off. But it is not
+            shut down but retains the memory state. S0, S1, S2, S3, and S4 are the four power states, of which S1, S2,
+            S3, and S4 are the three sleeping states. With each successive sleep state, from S1 to S4, more of the
+            computer is shut down. S5 is the classic complete shutdown power state. Power States in Windows 11/10
+            In this post, we will see the different System Sleep States in Windows:
+
+            System Power State S0 - This is the Working State, where your Windows PC is awake. This is not a Sleep
+            state.
+            System Power State S1 - In this sleep state, the CPU is stopped and your computer is in standby mode. If the
+            next S3 state is note supported, this S2 is the default state on most hardware. The Processor clock is off
+            and bus clocks are stopped. In this state, the power consumption could be between 5 – 30 Watts.
+            System Power State S2 - This state is similar to S1 except that the CPU context and contents of the system
+            cache are lost because the processor loses power.
+            System Power State S3 - In this state, data or context is saved to RAM and hard drives, fans, etc. are shut
+            down. The power consumption is usually less than 5 Watts. Wake-On-LAN is supported from S3 (Sleep) or S4
+            (Hibernate) state in Windows 11/10/8.
+            System Power State S4 - In this state, data or context is saved to Disk. It is also known as the Hibernate
+            state and is useful for laptops. Your PC saves the contents of RAM to the hard disk. The hardware powers off
+            all devices. The operating system context, however, is maintained in a hibernate file that the system writes
+            to disk before entering the S4 state. Upon restart, the loader reads this file and jumps to the system’s
+            previous, pre-hibernation location. Power consumption is again less than 5 Watts.</p>
+        <p>Sleep and Hibernate are system-wide coordinated sleep states. When the operating system enters or exits one
+            of these states, it must transition the system in a coordinated manner across applications, services,
+            drivers, devices, and firmware. These transitions require coordination and processing across many layers in
+            the system, many of which are provided by third parties. Therefore, these transitions can be relatively
+            time-consuming and prevent transitions from being near-instant to the user.
+
+            Modern Standby is neither a sleep state nor a fully coordinated, system-wide power state transition. The
+            system is still on but the display is powered off and the system is driven to be as idle as possible. The
+            goal is to provide a seamless on/off experience and constant connectivity while delivering consistently long
+            battery life. Systems that support it do not support Sleep (or ACPI S3) because Modern Standby effectively
+            replaces the Sleep experience. Modernd Standby-capable systems running on x86 platforms do support
+            Hibernate. Hibernate is not supported on ARM-based platforms.</p>
+        <p>A process contains its own independent virtual address space with both code and data, protected from other
+            processes. Each process, in turn, contains one or more independently executing threads. A thread running
+            within a process can execute application code, create new threads, create new independent processes, and
+            manage communication and synchronization among the threads.
+
+            By creating and managing processes, applications can have multiple, concurrent tasks processing files,
+            performing computations, or communicating with other networked systems. It is even possible to improve
+            application performance by exploiting multiple CPU processors.</p>
+        <p>Multiprogramming - Multiprogramming is known as keeping multiple programs in the main memory at the same time
+            ready for execution.
+            Multiprocessing - A computer using more than one CPU at a time.
+            Multitasking - Multitasking is nothing but multiprogramming with a Round-robin scheduling algorithm.
+            Multithreading is an extension of multitasking.</p>
+        <p>When a processor reads or writes to a memory location, it uses a virtual address. As part of the read or
+            write operation, the processor translates the virtual address to a physical address.
+
+            Accessing memory through a virtual address has these advantages:
+
+            A program can use a contiguous range of virtual addresses to access a large memory buffer that is not
+            contiguous in physical memory.
+
+            A program can use a range of virtual addresses to access a memory buffer that is larger than the available
+            physical memory. As the supply of physical memory becomes small, the memory manager saves pages of physical
+            memory (typically 4 kilobytes in size) to a disk file. Pages of data or code are moved between physical
+            memory and the disk as needed.
+
+            The virtual addresses used by different processes are isolated from each other. The code in one process
+            cannot alter the physical memory that is being used by another process or the operating system.</p>
+        <h2 id="primary">Windows Quiz</h2>
+        <p>(Note:- Click on the triangle icon located at the start of the questions to verify your answer!)</p>
+        <details>
+            <summary> Which of the following is responsible for loading the operating system from its permanent location
+                in hard drive to RAM: <br> (a) BIOS <br> (b) API <br> (c)
+                Device Driver <br> (d) Supervisor Program </summary>
+            Answer - (a) BIOS
+        </details>
+        <br>
+        <details>
+            <summary> Microsoft created Windows for playing the role as: <br> (a) Word Processor <br>
+                (b) Operating System <br> (c)
+                Web Browser <br> (d) Computer </summary>
+            Answer - (b) Operating System
+        </details>
+        <br>
+        <details>
+            <summary> BIOS is located in: <br> (a) RAM <br>
+                (b) ROM <br> (c) CPU <br> (d) Hard drive </summary>
+            Answer - (b) ROM
+        </details>
+        <br>
+        <details>
+            <summary> The hardware allows privileged instructions to be executed only in which mode: <br> (a) Virtual
+                Mode <br>
+                (b) I/O Mode <br> (c) User Mode <br> (d) Kernel Mode </summary>
+            Answer - (d) Kernel Mode
+        </details>
+        <br>
+        <details>
+            <summary> What is BIOS an acronym for: <br> (a) Bootstrap Initial Operating System <br>
+                (b) Boot Initial Operating Startup <br> (c) Basic Input Output System <br> (d) Basic Input Output
+                Startup </summary>
+            Answer - (c) Basic Input Output System
+        </details>
+        <br>
+    </div>
+</body>
+
+</html>
